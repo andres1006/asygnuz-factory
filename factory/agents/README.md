@@ -25,10 +25,12 @@ Ver [handoff-flow.md](handoff-flow.md).
 
 | Herramienta | Cómo enlaza |
 |-------------|-------------|
-| **Cursor** | `.cursor/rules/*.mdc` → descripción + enlace al perfil en `factory/agents/profiles/`. |
-| **Claude Code** | `CLAUDE.md` en la raíz del repo apunta aquí. |
+| **Cursor** | `.cursor/rules/*.mdc` → descripción + enlace al perfil en `factory/agents/profiles/`. Skills instalados vía [skills.sh](https://skills.sh/) en `.agents/skills/` (ver `../skills/README.md`). |
+| **Claude Code** | `CLAUDE.md` en la raíz del repo apunta aquí; skills en `.claude/skills/` (symlink desde `.agents/skills/` al instalar). |
 | **Antigravity / Gemini** | `GEMINI.md` + opcional `.agent/rules/` (puntero). |
 | **Cualquier otra** | Abre el `.md` del perfil o pega su ruta como contexto. |
+
+Instalación de skills del stack: `./scripts/install-skills.sh` (desde la raíz del wrapper).
 
 ## Relación con `template/`
 

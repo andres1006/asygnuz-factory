@@ -14,6 +14,7 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 | **Operación** | `operations/` | Runbooks, releases, evolución del template. |
 | **Playbooks** | `playbooks/` | Flujo por rol y entregas entre equipos. |
 | **Agentes (IA)** | `agents/` | Perfiles por rol (Markdown); Cursor/Claude/Gemini enlazan aquí sin duplicar política. |
+| **Skills instalados** | `skills/` | Catálogo y mapa al stack ([skills.sh](https://skills.sh/)); artefactos en `.agents/skills/` (ver `../scripts/install-skills.sh`). |
 | **Inteligencia** | `monitoring/` + `metrics/` | Portafolio, estado, KPIs y scorecards. |
 | **Evolución** | `changes/` | Propuestas y trabajo para mejorar el template y la fábrica. |
 

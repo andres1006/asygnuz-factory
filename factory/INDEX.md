@@ -15,6 +15,9 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 ## Arquitectura (Factory ↔ Template ↔ Projects)
 - architecture/factory-architecture.md
 
+## Skills (ecosistema skills.sh)
+- skills/README.md
+
 ## Estándares (política transversal)
 - standards/README.md
 - standards/engineering-standards.md

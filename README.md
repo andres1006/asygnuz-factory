@@ -15,6 +15,9 @@ Repositorio **wrapper** de la empresa/fábrica: gobierno, template y documentaci
 ## Agentes por rol (multi-herramienta)
 - Definición canónica: `factory/agents/README.md`. Punteros en raíz: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`; reglas Cursor en `.cursor/rules/`.
 
+## Skills ([skills.sh](https://skills.sh/))
+- Catálogo y mapa por stack/perfil: `factory/skills/README.md`. Instalar en el repo: `./scripts/install-skills.sh` (genera `.agents/skills/`, enlaces para Claude Code, etc.).
+
 ## Flujo recomendado
 - Leer `factory/strategy/incubator-model.md` para roles fusionados, aprobaciones y MCP por demanda.
 - Mantener y mejorar estándar en `factory/`.

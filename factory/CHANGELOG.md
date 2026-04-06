@@ -1,5 +1,10 @@
 # Factory Changelog
 
+## v1.4.0
+- `skills/README.md`: catálogo [skills.sh](https://skills.sh/) alineado a stack (Next, React, Neon, Vercel, shadcn, Node, PRD, GitHub Actions spec, Stitch design-md, planes).
+- `../scripts/install-skills.sh`: instalación no interactiva para Cursor, Claude Code y Antigravity.
+- `agents/README.md`, `AGENTS.md`, `template/docs/tooling-agents.md`: enlaces a skills.
+
 ## v1.3.0
 - `agents/`: perfiles por rol en Markdown (`profiles/*.md`), `README.md`, `handoff-flow.md`; alineados a playbooks y gates.
 - Raíz del wrapper: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursor/rules/` (core + `agent-*.mdc`), `.agent/rules/factory-agents.md`.

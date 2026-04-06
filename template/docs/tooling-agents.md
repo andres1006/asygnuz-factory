@@ -9,7 +9,8 @@ Abre directamente `factory/agents/profiles/<rol>.md` y las reglas `.cursor/rules
 Opciones para mantener el mismo comportamiento:
 
 1. **Copiar o sincronizar** al crear el repo: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursor/rules/`, `.agent/rules/` desde el repo de la fábrica (o un script).
-2. **Submodule** del repo de la fábrica (solo si quieres actualizaciones automáticas de política).
-3. **Manual:** pegar en el chat la ruta o contenido del perfil desde la última versión publicada de la fábrica.
+2. **Skills ([skills.sh](https://skills.sh/)):** en el monorepo de la fábrica corre `./scripts/install-skills.sh`; en un repo solo de producto puedes copiar el script + `factory/skills/README.md` o ejecutar los mismos `npx skills add ...` listados allí.
+3. **Submodule** del repo de la fábrica (solo si quieres actualizaciones automáticas de política).
+4. **Manual:** pegar en el chat la ruta o contenido del perfil desde la última versión publicada de la fábrica.
 
 La estructura de entregables de este template (`docs/`, `design/`, `qa/`, etc.) es la que los perfiles referencian; **no** sustituyas esa estructura sin un ADR en el producto.
