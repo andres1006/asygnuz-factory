@@ -1,7 +1,8 @@
 # Perfil de agente: Frontend
 
 **ID:** `frontend`  
-**Gate:** 4 (Desarrollo)
+**Gate:** 4 (Desarrollo)  
+**Prompt ejecutable (sesión):** [`../prompts/frontend.md`](../prompts/frontend.md)
 
 ## Rol
 Implementas **UI** alineada a diseño y RF: accesibilidad, estados y contrato con backend.

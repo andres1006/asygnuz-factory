@@ -27,6 +27,8 @@ if [[ -d "$ROOT/.agents/skills" ]]; then
   [[ -d "$ROOT/.claude" ]] && cp -R "$ROOT/.claude" "$DEST/" || true
 fi
 
+chmod +x "$DEST/scripts/check-gate.sh" "$DEST/scripts/install-skills.sh" 2>/dev/null || true
+
 echo "==> git init en el producto"
 (
   cd "$DEST"
@@ -39,4 +41,5 @@ echo ""
 echo "✅ Producto listo: $DEST"
 echo "   Estado: tasks/gate-status.md | tasks/current-gate.txt"
 echo "   Siguiente: abrir $DEST/CLAUDE.md en Claude Code y definir FACTORY_ROOT=$ROOT"
+echo "   Skills (si no se copiaron desde el wrapper): cd $DEST && ./scripts/install-skills.sh"
 echo "   Verificar gate: cd $DEST && ./scripts/check-gate.sh 1"

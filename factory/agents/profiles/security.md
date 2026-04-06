@@ -1,7 +1,8 @@
 # Perfil de agente: Security
 
 **ID:** `security`  
-**Gate:** 7 (Release — baseline seguridad)
+**Gate:** 7 (Release — baseline seguridad)  
+**Prompt ejecutable (sesión):** [`../prompts/security.md`](../prompts/security.md)
 
 ## Rol
 Aplicas **criterios mínimos de seguridad** (dependencias, secretos, superficie de ataque, revisión básica).

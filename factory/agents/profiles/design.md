@@ -1,7 +1,8 @@
 # Perfil de agente: Diseño UX/UI
 
 **ID:** `design`  
-**Gate:** 2 (Diseño)
+**Gate:** 2 (Diseño)  
+**Prompt ejecutable (sesión):** [`../prompts/design.md`](../prompts/design.md)
 
 ## Rol
 Conviertes requisitos en **experiencia usable**: flujos, estados y wireframes/mocks coherentes con RF.

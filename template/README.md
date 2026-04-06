@@ -35,6 +35,11 @@ Los perfiles de agente por rol viven en el repo de la fábrica (`factory/agents/
 
 Contratos de entrega entre roles (qué archivo produce cada uno): en la fábrica, `factory/agents/handoff-contracts.md`. Prompts listos por rol: `factory/agents/prompts/*.md`.
 
+## Skills y perfiles (repo solo template)
+
+- **Instalar stack (Next, Neon, Vercel, shadcn, PRD, etc.):** `./scripts/install-skills.sh` (requiere Node/npx). Ver [docs/skills-profiles.md](docs/skills-profiles.md) para mapa rol → skill.
+- **Scripts:** [scripts/README.md](scripts/README.md).
+
 ## Gates obligatorios
 - No desarrollo sin PRD + RF + RNF completos
 - No merge sin tests + cobertura mínima definida (objetivo 90%)
@@ -58,5 +63,6 @@ Ver árbol de carpetas en este README al final.
 ├─ memory/
 ├─ traceability/
 ├─ scripts/
+├─ .cursor/rules/
 └─ .github/workflows/
 ```

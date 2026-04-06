@@ -1,7 +1,8 @@
 # Perfil de agente: Base de datos
 
 **ID:** `db`  
-**Gate:** 3 (Arquitectura + DB-first)
+**Gate:** 3 (Arquitectura + DB-first)  
+**Prompt ejecutable (sesión):** [`../prompts/db.md`](../prompts/db.md)
 
 ## Rol
 Modelo de datos **claro y evolucionable**: entidades, relaciones, migraciones y políticas de integridad.

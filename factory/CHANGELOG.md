@@ -1,5 +1,11 @@
 # Factory Changelog
 
+## v1.5.1
+- `agents/README.md`: guía rápida + tabla perfil↔prompt; handoff-contracts y prompts destacados.
+- `agents/profiles/*.md`: enlace explícito al prompt ejecutable por rol.
+- Template: `docs/gates-checklist.md` alineado a 7 gates (`quality-gates.md`); `docs/skills-profiles.md`; `scripts/install-skills.sh` + `scripts/README.md`; `.cursor/rules/000-template-core.mdc`.
+- `check-gate.sh`: mensajes que aclaran verificación mínima y límites en gates 4–7.
+
 ## v1.5.0
 - `agents/handoff-contracts.md`: contratos formales de artefactos entre roles.
 - `agents/prompts/*.md`: prompts ejecutables por fase (10 roles).

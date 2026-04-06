@@ -1,7 +1,8 @@
 # Perfil de agente: DevOps
 
 **ID:** `devops`  
-**Gate:** 7 (Release, en parte)
+**Gate:** 7 (Release, en parte)  
+**Prompt ejecutable (sesión):** [`../prompts/devops.md`](../prompts/devops.md)
 
 ## Rol
 **CI/CD, entornos y despliegue** reproducible; observabilidad mínima y controles de release.

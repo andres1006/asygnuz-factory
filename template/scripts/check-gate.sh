@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Valida existencia (y no vacío) de artefactos mínimos por gate.
-# Uso (desde la raíz del repo del producto): ./scripts/check-gate.sh [N]
-# Si no pasás N, lee tasks/current-gate.txt
+# Verificación MÍNIMA: solo comprueba que existan archivos esperados y no estén vacíos.
+# NO valida: calidad del texto, cobertura real ≥90%, existencia de PRs (requeriría gh/API),
+# ni criterios GIVEN/WHEN/THEN. Para eso usá revisión humana y docs/gates-checklist.md.
+# Uso: ./scripts/check-gate.sh [N]  —  si omitís N, lee tasks/current-gate.txt
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -29,6 +30,7 @@ need_file() {
 }
 
 echo "==> Verificando Gate $GATE en $ROOT"
+echo "    (modo: archivos mínimos; ver cabecera de este script para límites)"
 
 case "$GATE" in
   1)
@@ -50,10 +52,12 @@ case "$GATE" in
     else
       ok "Historias en tasks/hu/"
     fi
+    echo "    ℹ️  Gate 4: no se verifican PRs ni SOLID; solo presencia de plan/HU."
     ;;
   5)
     need_file "qa/test-plan.md" "Plan de pruebas"
     need_file "qa/coverage-report.md" "Reporte de cobertura"
+    echo "    ℹ️  Gate 5: no se parsea cobertura ≥90%; revisar el markdown a mano o CI de tests."
     ;;
   6)
     need_file "uat/uat-checklist.md" "Checklist UAT"
@@ -62,11 +66,13 @@ case "$GATE" in
     else
       ok "Resultados UAT"
     fi
+    echo "    ℹ️  Gate 6: no se valida aprobación de negocio ni texto del resultado."
     ;;
   7)
     need_file "security/security-checklist.md" "Checklist seguridad"
     need_file "traceability/matriz-trazabilidad.md" "Matriz de trazabilidad"
     need_file "security/security-report.md" "Reporte de seguridad"
+    echo "    ℹ️  Gate 7: no se verifica deploy real ni baseline de seguridad en código."
     ;;
   *)
     echo "❌ Gate desconocido: $GATE (usa 1-7)"
@@ -78,5 +84,5 @@ if [[ "${FAIL:-0}" -ne 0 ]]; then
   echo "==> Gate $GATE: falló la verificación"
   exit 1
 fi
-echo "==> Gate $GATE: verificación mínima OK"
+echo "==> Gate $GATE: verificación mínima OK (solo archivos; ver docs/gates-checklist.md para criterios completos)"
 exit 0

@@ -1,7 +1,8 @@
 # Perfil de agente: QA
 
 **ID:** `qa`  
-**Gate:** 5 (QA)
+**Gate:** 5 (QA)  
+**Prompt ejecutable (sesión):** [`../prompts/qa.md`](../prompts/qa.md)
 
 ## Rol
 Verificas calidad **antes de UAT**: pruebas automatizadas y manuales, cobertura y gestión de defectos.

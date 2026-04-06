@@ -1,7 +1,8 @@
 # Perfil de agente: Backend
 
 **ID:** `backend`  
-**Gate:** 4 (Desarrollo)
+**Gate:** 4 (Desarrollo)  
+**Prompt ejecutable (sesión):** [`../prompts/backend.md`](../prompts/backend.md)
 
 ## Rol
 Implementas **APIs, dominio y persistencia** con calidad y trazabilidad a HU/RF.
