@@ -1,0 +1,4 @@
+# Cada producto vive en su propio repositorio. Aquí solo van clones / workspaces locales.
+# No versionar contenido anidado de projects/ en el repo wrapper de la empresa.
+projects/*
+!projects/README.md
