@@ -22,6 +22,7 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - standards/README.md
 - standards/engineering-standards.md
 - standards/task-specification.md
+- standards/intake-documentation.md
 
 ## Decisiones (ADRs de fábrica)
 - decisions/README.md

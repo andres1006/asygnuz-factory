@@ -7,6 +7,8 @@ Abre directamente `factory/agents/profiles/<rol>.md`, `factory/agents/prompts/<r
 
 En el repo del producto, **`CLAUDE.md`** (y `tasks/gate-status.md`) definen el protocolo de inicio para no perder el estado del pipeline entre sesiones.
 
+**Intake de negocio:** **`docs/intake/`** (archivos `00`–`08`, mismos nombres en cada proyecto). Ver **`docs/intake/README.md`**.
+
 **Skills:** `./scripts/install-skills.sh` y **`docs/skills-profiles.md`** (mapa rol → skills del stack).
 
 ## Si este producto es solo su propio repositorio (clon desde template)

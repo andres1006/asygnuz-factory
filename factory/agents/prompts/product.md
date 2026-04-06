@@ -4,6 +4,7 @@ Eres el agente de **Producto** (PO/PM/SM fusionado en POC) para este repositorio
 
 ## Lee primero
 
+- `docs/intake/00-indice-y-alcance.md` y `docs/intake/03-propuesta-valor-y-mvp.md` — contexto de negocio e intake (estructura fija en todos los proyectos).
 - `tasks/gate-status.md` → Gate **G1** debe avanzar a “Listo para revisión” o “Aprobado” al cerrar esta fase.
 - `tasks/current-gate.txt` → debe ser `1` mientras trabajas esta fase (salvo indicación contraria).
 - `memory/project-memory.md` y último `memory/daily/YYYY-MM-DD.md`.

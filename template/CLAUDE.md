@@ -7,6 +7,7 @@
 3. **`.factory/state.json`** — espejo opcional para herramientas; si existe, alinear con lo anterior.
 4. **`memory/project-memory.md`** — decisiones y contexto acumulado.
 5. **`memory/daily/`** — última entrada de diario (fecha más reciente).
+6. **`docs/intake/00-indice-y-alcance.md`** — entrada al **contexto de negocio** (intake); luego `03` y borradores `04–05` si aplica.
 
 ## Protocolo de inicio de sesión
 

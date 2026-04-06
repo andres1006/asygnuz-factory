@@ -5,6 +5,7 @@ Aquí se centralizan las **reglas transversales** que todos los proyectos deben 
 ## Contenido
 - `engineering-standards.md` — convenciones técnicas mínimas (stack, PRs, calidad).
 - `task-specification.md` — campos mínimos de una tarea (quién, para qué, criterios de aceptación).
+- `intake-documentation.md` — estructura estándar `docs/intake/` (contexto de negocio antes del PRD).
 
 ## Relación con el template
 El proyecto en `template/` es la **instancia documentada** del estándar (estructura de carpetas, gates por fase). Los documentos de `standards/` son la **política**; el template es la **aplicación**.

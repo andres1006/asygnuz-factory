@@ -9,8 +9,12 @@ Plantilla robusta para lanzar productos con entrega semanal, trazabilidad y cali
 - Hosting/CI-CD: Vercel + GitHub
 - Arquitectura: SOLID + Clean Code
 
+## Intake — contexto de negocio (estructura fija)
+
+Antes o durante el PRD formal, documentar investigación en **`docs/intake/`** (archivos `00`–`08`, mismos nombres en todos los proyectos). Ver **[docs/intake/README.md](docs/intake/README.md)**. El intake alimenta `docs/00-prd.md`; no lo sustituye hasta consolidar Gate 1.
+
 ## Flujo operativo semanal
-1. **Producto**: completar `docs/00-prd.md`, `docs/01-requisitos-funcionales.md`, `docs/02-requisitos-no-funcionales.md`
+1. **Producto**: completar intake (`docs/intake/`) y luego `docs/00-prd.md`, `docs/01-requisitos-funcionales.md`, `docs/02-requisitos-no-funcionales.md`
 2. **Diseño**: actualizar `design/user-flows.md` + wireframes
 3. **HU**: crear historias en `tasks/hu/` y plan semanal `tasks/sprint-week-XX.md`
 4. **Arquitectura/DB**: definir solución en `architecture/solution-architecture.md` y modelo en `db/data-model.md`
@@ -52,6 +56,10 @@ Ver árbol de carpetas en este README al final.
 ```text
 .
 ├─ docs/
+│  ├─ intake/          # fuente canónica de contexto negocio (00–08)
+│  ├─ 00-prd.md
+│  ├─ 01-requisitos-funcionales.md
+│  └─ …
 ├─ design/
 ├─ tasks/
 ├─ architecture/

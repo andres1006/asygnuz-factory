@@ -1,5 +1,10 @@
 # Factory Changelog
 
+## v1.6.0
+- Template: carpeta **`docs/intake/`** con estructura fija `00–08` (README + plantillas) para gestión coherente del contexto de negocio antes del PRD.
+- `factory/standards/intake-documentation.md`: estándar de la fábrica para ese intake.
+- `template/README.md`, `template/CLAUDE.md`, prompt producto: lectura obligatoria del intake en flujo de producto.
+
 ## v1.5.1
 - `agents/README.md`: guía rápida + tabla perfil↔prompt; handoff-contracts y prompts destacados.
 - `agents/profiles/*.md`: enlace explícito al prompt ejecutable por rol.
