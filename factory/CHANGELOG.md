@@ -1,5 +1,8 @@
 # Factory Changelog
 
+## v1.2.1
+- Alineación de documentación: `README.md` (flujo de lectura con arquitectura, gobierno completo, estándares de tarea, decisiones); `INDEX.md` (enlace al wrapper y autoreferencia); `factory-architecture.md`, `operating-model.md`, `decisions/README.md` e `incubator-model.md` con referencias cruzadas coherentes.
+
 ## v1.2.0
 - `strategy/incubator-model.md`: POC propia → monetización/clientes; Markdown como fuente; MCP por demanda; roles fusionados; UAT único; control y transición a autonomía; repos por producto.
 - `standards/task-specification.md`: tareas con quién / para qué / cómo / criterios de aceptación.

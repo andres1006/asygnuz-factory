@@ -1,5 +1,7 @@
 # Factory — índice maestro
 
+Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapper** (raíz del monorepo) se describe en `../README.md`.
+
 ## Estrategia (norte)
 - strategy/vision.md
 - strategy/incubator-model.md
@@ -54,6 +56,7 @@
 ## Evolución del template
 - changes/ (propuestas por iniciativa, p. ej. `changes/product-factory-template-v1/`)
 
-## Documentación raíz
+## Documentación raíz (`factory/`)
 - README.md
+- INDEX.md (este archivo)
 - CHANGELOG.md

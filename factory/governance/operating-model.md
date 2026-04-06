@@ -3,6 +3,9 @@
 ## Propósito
 Construir productos de software validables en ciclos semanales, con calidad técnica alta, trazabilidad total y aprendizaje acumulativo para mejorar el template.
 
+## Contexto (POC incubadora)
+Reglas de producto propio, intake en Markdown, MCP por demanda y transición a autonomía: ver `../strategy/incubator-model.md`. Este documento define el **ritmo**; la visión y el modelo de negocio viven en `../strategy/`.
+
 ## Principios operativos
 1. Entrega de valor semanal > perfección tardía.
 2. DB-first para claridad y escalabilidad.

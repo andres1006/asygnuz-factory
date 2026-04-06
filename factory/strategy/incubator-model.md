@@ -1,5 +1,7 @@
 # Modelo incubadora + fábrica de software
 
+*Ubicación en la fábrica:* estrategia (`strategy/`). Índice de todo `factory/`: `../INDEX.md`.
+
 ## Objetivo
 Sacar productos digitales **escalables y mantenibles**, validar en mercado **rápido**, **iterar o pivotear** como incubadora, y evolucionar hacia **réplica en producción con clientes** cuando el modelo esté probado.
 

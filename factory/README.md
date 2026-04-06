@@ -18,11 +18,15 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 
 ## Flujo de lectura recomendado
 1. `strategy/vision.md` y `strategy/incubator-model.md` — propósito y reglas de la POC (Markdown, MCP, aprobaciones, repos).
-2. `governance/operating-model.md` + `governance/quality-gates.md` — cadencia y gates.
-3. `standards/` — límites técnicos.
-4. `playbooks/roles-and-handoffs.md` — quién hace qué.
-5. `operations/` — cómo se opera la semana y los releases.
-6. `monitoring/` / `metrics/` — cómo se mide.
+2. `architecture/factory-architecture.md` — niveles Factory → Template → Projects (repos separados).
+3. `governance/operating-model.md` + `governance/quality-gates.md` + `governance/factory-governance.md` — cadencia, gates y DoD global.
+4. `standards/engineering-standards.md` y `standards/task-specification.md` — política técnica y formato de tareas.
+5. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad.
+6. `operations/` — semana, releases y evolución del template.
+7. `monitoring/` y `metrics/` — portafolio y medición.
+8. `decisions/` — cuando una decisión afecte a toda la fábrica o al template base (ADRs).
+
+El listado exhaustivo de archivos está en `INDEX.md`.
 
 ## Regla de oro
 Todo aprendizaje de proyectos se retroalimenta en `template/` vía un change documentado en `changes/`, alineado con estándares y, si aplica, un ADR en `decisions/`.

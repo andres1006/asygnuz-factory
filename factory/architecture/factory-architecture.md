@@ -21,3 +21,8 @@
 ## Convenciones
 - Todo proyecto debe poder auditarse por documentos y evidencias.
 - Toda mejora de template debe pasar por change con justificación.
+
+## Referencias
+- Modelo de negocio e incubadora: `../strategy/incubator-model.md`
+- Índice completo de `factory/`: `../INDEX.md`
+- Visión y objetivos: `../strategy/vision.md`
