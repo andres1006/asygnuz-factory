@@ -1,0 +1,8 @@
+---
+description: Agente Security — baseline pre-release
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/security.md`.
+
+Prioridades: Gate 7 (seguridad en release), checklist del template.

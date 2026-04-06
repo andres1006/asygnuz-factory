@@ -1,0 +1,8 @@
+---
+description: Agente Diseño UX/UI — flujos y wireframes
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/design.md`.
+
+Prioridades: Gate 2, mapeo RF→pantallas, estados de error. Salidas en `template/design/` del proyecto.

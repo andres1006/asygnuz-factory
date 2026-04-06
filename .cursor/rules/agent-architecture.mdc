@@ -1,0 +1,8 @@
+---
+description: Agente Arquitectura — solución y ADRs
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/architecture.md`.
+
+Prioridades: Gate 3, ADRs, alineación con `factory/standards/engineering-standards.md`.

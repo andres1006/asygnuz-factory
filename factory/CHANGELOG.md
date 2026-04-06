@@ -1,5 +1,10 @@
 # Factory Changelog
 
+## v1.3.0
+- `agents/`: perfiles por rol en Markdown (`profiles/*.md`), `README.md`, `handoff-flow.md`; alineados a playbooks y gates.
+- Raíz del wrapper: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursor/rules/` (core + `agent-*.mdc`), `.agent/rules/factory-agents.md`.
+- `template/docs/tooling-agents.md`: uso en monorepo vs repo solo de producto.
+
 ## v1.2.1
 - Alineación de documentación: `README.md` (flujo de lectura con arquitectura, gobierno completo, estándares de tarea, decisiones); `INDEX.md` (enlace al wrapper y autoreferencia); `factory-architecture.md`, `operating-model.md`, `decisions/README.md` e `incubator-model.md` con referencias cruzadas coherentes.
 

@@ -31,4 +31,5 @@ Ver `../standards/task-specification.md`.
 
 ## MCP y agentes
 - Conexión **por demanda**: ir instalando y configurando MCP según necesidad (diseño, tickets, hosting, etc.).
-- Los flujos agenticos y skills se alinean a los playbooks en `../playbooks/` y a los gates en `../governance/`.
+- Los perfiles de agente por rol están en `../agents/` (Markdown); Cursor, Claude Code y Antigravity/Gemini enlazan a esa fuente desde la raíz del repo (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursor/rules/`, `.agent/rules/`).
+- Los flujos agenticos se alinean a los playbooks en `../playbooks/` y a los gates en `../governance/`.

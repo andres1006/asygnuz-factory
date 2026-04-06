@@ -1,0 +1,8 @@
+---
+description: Agente QA — pruebas y cobertura
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/qa.md`.
+
+Prioridades: Gate 5, plan de pruebas, defectos trazados a HU/RF.

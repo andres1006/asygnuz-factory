@@ -40,6 +40,20 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - metrics/scorecard-template.md
 - metrics/quality-metrics.md
 
+## Agentes (perfiles por rol, fuente canónica)
+- agents/README.md
+- agents/handoff-flow.md
+- agents/profiles/product.md
+- agents/profiles/design.md
+- agents/profiles/architecture.md
+- agents/profiles/db.md
+- agents/profiles/backend.md
+- agents/profiles/frontend.md
+- agents/profiles/qa.md
+- agents/profiles/uat.md
+- agents/profiles/devops.md
+- agents/profiles/security.md
+
 ## Playbooks por rol
 - playbooks/roles-and-handoffs.md
 - playbooks/product-playbook.md

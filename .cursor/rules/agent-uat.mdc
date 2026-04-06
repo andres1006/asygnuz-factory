@@ -1,0 +1,8 @@
+---
+description: Agente UAT — aceptación de negocio (preparación)
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/uat.md`.
+
+Prioridades: Gate 6, checklists; aprobación final humana salvo política explícita.

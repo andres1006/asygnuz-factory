@@ -12,6 +12,9 @@ Repositorio **wrapper** de la empresa/fábrica: gobierno, template y documentaci
 - **Ahora**: productos propios, validación rápida, intake en Markdown (con tolerancia a caos), diseño vía MCP según se conecte.
 - **Meta**: monetizar y replicar el mismo modo de trabajo con **clientes en producción**.
 
+## Agentes por rol (multi-herramienta)
+- Definición canónica: `factory/agents/README.md`. Punteros en raíz: `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`; reglas Cursor en `.cursor/rules/`.
+
 ## Flujo recomendado
 - Leer `factory/strategy/incubator-model.md` para roles fusionados, aprobaciones y MCP por demanda.
 - Mantener y mejorar estándar en `factory/`.

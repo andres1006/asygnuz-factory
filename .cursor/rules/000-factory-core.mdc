@@ -1,0 +1,13 @@
+---
+description: Núcleo fábrica — fuente de agentes y gates
+alwaysApply: true
+---
+
+# POC Factory (wrapper)
+
+- Perfiles de agente (canónicos): `factory/agents/README.md` y `factory/agents/profiles/*.md`.
+- Handoffs: `factory/agents/handoff-flow.md`.
+- Gates: `factory/governance/quality-gates.md`.
+- Tareas: `factory/standards/task-specification.md`.
+
+Para un rol específico, activa la regla **agent-\*** correspondiente o abre el `.md` del perfil.

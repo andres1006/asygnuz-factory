@@ -20,6 +20,9 @@ Plantilla robusta para lanzar productos con entrega semanal, trazabilidad y cali
 8. **Trazabilidad**: actualizar `traceability/matriz-trazabilidad.md`
 9. **Memoria**: registrar decisiones en `memory/project-memory.md` y diario en `memory/daily/YYYY-MM-DD.md`
 
+## Herramientas y agentes (IDE)
+Los perfiles de agente por rol viven en el repo de la fábrica (`factory/agents/`). Si el producto es un repo aparte, ver `docs/tooling-agents.md` para sincronizar reglas y punteros.
+
 ## Gates obligatorios
 - No desarrollo sin PRD + RF + RNF completos
 - No merge sin tests + cobertura mínima definida (objetivo 90%)

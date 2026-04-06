@@ -1,0 +1,8 @@
+---
+description: Agente DevOps — CI/CD y release
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/devops.md`.
+
+Prioridades: pipelines, `factory/operations/release-policy.md`, despliegue reproducible.

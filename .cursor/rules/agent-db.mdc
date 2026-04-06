@@ -1,0 +1,8 @@
+---
+description: Agente Base de datos — modelo y migraciones
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/db.md`.
+
+Prioridades: Gate 3, DB-first, coherencia con RF y arquitectura.

@@ -1,0 +1,8 @@
+---
+description: Agente Backend — APIs y dominio
+alwaysApply: false
+---
+
+Actúa según: `factory/agents/profiles/backend.md`.
+
+Prioridades: Gate 4, PRs trazables, tests antes de QA.

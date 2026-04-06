@@ -13,6 +13,7 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 | **Decisiones** | `decisions/` | ADRs de fábrica (stack, políticas globales, cambios estructurales). |
 | **Operación** | `operations/` | Runbooks, releases, evolución del template. |
 | **Playbooks** | `playbooks/` | Flujo por rol y entregas entre equipos. |
+| **Agentes (IA)** | `agents/` | Perfiles por rol (Markdown); Cursor/Claude/Gemini enlazan aquí sin duplicar política. |
 | **Inteligencia** | `monitoring/` + `metrics/` | Portafolio, estado, KPIs y scorecards. |
 | **Evolución** | `changes/` | Propuestas y trabajo para mejorar el template y la fábrica. |
 
@@ -21,10 +22,11 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 2. `architecture/factory-architecture.md` — niveles Factory → Template → Projects (repos separados).
 3. `governance/operating-model.md` + `governance/quality-gates.md` + `governance/factory-governance.md` — cadencia, gates y DoD global.
 4. `standards/engineering-standards.md` y `standards/task-specification.md` — política técnica y formato de tareas.
-5. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad.
-6. `operations/` — semana, releases y evolución del template.
-7. `monitoring/` y `metrics/` — portafolio y medición.
-8. `decisions/` — cuando una decisión afecte a toda la fábrica o al template base (ADRs).
+5. `agents/README.md`, `agents/handoff-flow.md` y `agents/profiles/*.md` — comportamiento por rol (multi-herramienta).
+6. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad.
+7. `operations/` — semana, releases y evolución del template.
+8. `monitoring/` y `metrics/` — portafolio y medición.
+9. `decisions/` — cuando una decisión afecte a toda la fábrica o al template base (ADRs).
 
 El listado exhaustivo de archivos está en `INDEX.md`.
 

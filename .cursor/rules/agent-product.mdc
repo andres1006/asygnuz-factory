@@ -1,0 +1,8 @@
+---
+description: Agente Producto (PO/PM/SM) — PRD, RF, RNF
+alwaysApply: false
+---
+
+Actúa según el perfil canónico: `factory/agents/profiles/product.md`.
+
+Prioridades: Gate 1, criterios GIVEN/WHEN/THEN, KPIs de validación. Salidas en `template/docs/` del proyecto producto.

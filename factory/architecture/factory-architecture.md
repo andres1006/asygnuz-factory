@@ -1,7 +1,7 @@
 # Arquitectura de la Fábrica
 
 ## Niveles
-1. **Factory** — cerebro: estrategia (`strategy/`), gobierno, estándares, ADRs de fábrica, operación, playbooks, monitoreo, métricas y `changes/`.
+1. **Factory** — cerebro: estrategia (`strategy/`), gobierno, estándares, ADRs de fábrica, operación, playbooks, **agentes** (`agents/`), monitoreo, métricas y `changes/`.
 2. **Template** — molde técnico-documental replicable por proyecto.
 3. **Projects** — instancias operativas que ejecutan el template; **cada producto en su propio repositorio**. El repo wrapper de la fábrica puede tener `projects/<nombre>/` solo como clone local, **excluido del git del wrapper** para no anidar historiales.
 
@@ -10,7 +10,7 @@
 - `governance/`: reglas, RACI, gates, DoD.
 - `standards/`: políticas técnicas transversales.
 - `decisions/`: ADRs que afectan a toda la fábrica o al template base.
-- `operations/`, `playbooks/`, `monitoring/`, `metrics/`, `changes/`: operación, roles, visibilidad y evolución.
+- `operations/`, `playbooks/`, `agents/`, `monitoring/`, `metrics/`, `changes/`: operación, roles, perfiles de IA alineados a playbooks, visibilidad y evolución.
 
 ## Flujo de información
 - Cada proyecto registra decisiones y resultados (memoria en proyecto).
