@@ -23,6 +23,18 @@ Plantilla robusta para lanzar productos con entrega semanal, trazabilidad y cali
 ## Herramientas y agentes (IDE)
 Los perfiles de agente por rol viven en el repo de la fábrica (`factory/agents/`). Si el producto es un repo aparte, ver `docs/tooling-agents.md` para sincronizar reglas y punteros.
 
+## Continuidad entre sesiones (sin arrancar “en cero”)
+
+| Artefacto | Propósito |
+|-----------|-----------|
+| `CLAUDE.md`, `GEMINI.md`, `AGENTS.md` | Protocolo de inicio: qué leer primero (gates, memoria). |
+| `tasks/gate-status.md` | Tabla viva: en qué gate estás y qué está aprobado. |
+| `tasks/current-gate.txt` | Número `1`–`7` para scripts y CI (mantener alineado con la tabla). |
+| `.factory/state.json` | Espejo opcional para herramientas; no sustituye la tabla. |
+| `scripts/check-gate.sh` | Verificación mínima de archivos por gate: `./scripts/check-gate.sh` o `./scripts/check-gate.sh 3` |
+
+Contratos de entrega entre roles (qué archivo produce cada uno): en la fábrica, `factory/agents/handoff-contracts.md`. Prompts listos por rol: `factory/agents/prompts/*.md`.
+
 ## Gates obligatorios
 - No desarrollo sin PRD + RF + RNF completos
 - No merge sin tests + cobertura mínima definida (objetivo 90%)
@@ -45,5 +57,6 @@ Ver árbol de carpetas en este README al final.
 ├─ security/
 ├─ memory/
 ├─ traceability/
+├─ scripts/
 └─ .github/workflows/
 ```

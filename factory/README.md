@@ -23,7 +23,7 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 2. `architecture/factory-architecture.md` — niveles Factory → Template → Projects (repos separados).
 3. `governance/operating-model.md` + `governance/quality-gates.md` + `governance/factory-governance.md` — cadencia, gates y DoD global.
 4. `standards/engineering-standards.md` y `standards/task-specification.md` — política técnica y formato de tareas.
-5. `agents/README.md`, `agents/handoff-flow.md` y `agents/profiles/*.md` — comportamiento por rol (multi-herramienta).
+5. `agents/README.md`, `agents/handoff-flow.md`, `agents/handoff-contracts.md`, `agents/prompts/*.md` y `agents/profiles/*.md` — contratos, prompts y perfiles por rol.
 6. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad.
 7. `operations/` — semana, releases y evolución del template.
 8. `monitoring/` y `metrics/` — portafolio y medición.

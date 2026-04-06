@@ -2,6 +2,11 @@
 
 Los perfiles viven aquí en **Markdown** para que cualquier herramienta (Cursor, Claude Code, Antigravity, otros) pueda **leer el mismo contenido** sin lock-in. Las reglas específicas de cada IDE son **delgadas** y apuntan a estos archivos.
 
+## Contratos y prompts
+
+- **Handoffs formales (artefactos):** [handoff-contracts.md](handoff-contracts.md)
+- **Prompts ejecutables por rol:** [prompts/](prompts/) — copiar o referenciar desde el IDE al iniciar una fase.
+
 ## Índice de perfiles
 
 | ID | Perfil | Archivo |

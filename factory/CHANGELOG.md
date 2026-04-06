@@ -1,5 +1,12 @@
 # Factory Changelog
 
+## v1.5.0
+- `agents/handoff-contracts.md`: contratos formales de artefactos entre roles.
+- `agents/prompts/*.md`: prompts ejecutables por fase (10 roles).
+- Template: `CLAUDE.md`, `GEMINI.md`, `AGENTS.md`, `tasks/gate-status.md`, `tasks/current-gate.txt`, `.factory/state.json`, `scripts/check-gate.sh`.
+- `scripts/new-product.sh` (bootstrap en `projects/<nombre>`), `scripts/check-gate.sh` (delega al template).
+- `template/.github/workflows/gate-check.yml`: CI de verificación según `current-gate.txt`.
+
 ## v1.4.0
 - `skills/README.md`: catálogo [skills.sh](https://skills.sh/) alineado a stack (Next, React, Neon, Vercel, shadcn, Node, PRD, GitHub Actions spec, Stitch design-md, planes).
 - `../scripts/install-skills.sh`: instalación no interactiva para Cursor, Claude Code y Antigravity.

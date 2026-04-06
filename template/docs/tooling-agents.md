@@ -3,7 +3,9 @@
 Los perfiles **canónicos** viven en el repositorio de la fábrica (`asygnuz-factory` u homónimo), bajo **`factory/agents/`**.
 
 ## Si desarrollas dentro del monorepo (wrapper + template)
-Abre directamente `factory/agents/profiles/<rol>.md` y las reglas `.cursor/rules/agent-*.mdc` del wrapper.
+Abre directamente `factory/agents/profiles/<rol>.md`, `factory/agents/prompts/<rol>.md` y `factory/agents/handoff-contracts.md`; las reglas `.cursor/rules/agent-*.mdc` viven en el wrapper.
+
+En el repo del producto, **`CLAUDE.md`** (y `tasks/gate-status.md`) definen el protocolo de inicio para no perder el estado del pipeline entre sesiones.
 
 ## Si este producto es solo su propio repositorio (clon desde template)
 Opciones para mantener el mismo comportamiento:

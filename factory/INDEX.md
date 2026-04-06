@@ -46,6 +46,17 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 ## Agentes (perfiles por rol, fuente canónica)
 - agents/README.md
 - agents/handoff-flow.md
+- agents/handoff-contracts.md
+- agents/prompts/product.md
+- agents/prompts/design.md
+- agents/prompts/architecture.md
+- agents/prompts/db.md
+- agents/prompts/backend.md
+- agents/prompts/frontend.md
+- agents/prompts/qa.md
+- agents/prompts/uat.md
+- agents/prompts/devops.md
+- agents/prompts/security.md
 - agents/profiles/product.md
 - agents/profiles/design.md
 - agents/profiles/architecture.md

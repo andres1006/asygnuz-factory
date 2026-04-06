@@ -18,6 +18,10 @@ Repositorio **wrapper** de la empresa/fábrica: gobierno, template y documentaci
 ## Skills ([skills.sh](https://skills.sh/))
 - Catálogo y mapa por stack/perfil: `factory/skills/README.md`. Instalar en el repo: `./scripts/install-skills.sh` (genera `.agents/skills/`, enlaces para Claude Code, etc.).
 
+## Nuevo producto y gates
+- Crear carpeta bajo `projects/` desde el template: `./scripts/new-product.sh <nombre>` (configura nombre en `gate-status`, copia skills si existen, `git init`).
+- Validar artefactos del gate: `./scripts/check-gate.sh [N]` (usa `template/scripts/check-gate.sh`).
+
 ## Flujo recomendado
 - Leer `factory/strategy/incubator-model.md` para roles fusionados, aprobaciones y MCP por demanda.
 - Mantener y mejorar estándar en `factory/`.
