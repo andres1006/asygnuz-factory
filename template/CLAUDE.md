@@ -8,6 +8,7 @@
 4. **`memory/project-memory.md`** — decisiones y contexto acumulado.
 5. **`memory/daily/`** — última entrada de diario (fecha más reciente).
 6. **`docs/intake/00-indice-y-alcance.md`** — entrada al **contexto de negocio** (intake); luego `03` y borradores `04–05` si aplica.
+7. **`docs/project-changelog.md`** — línea de tiempo de definición y construcción (últimas entradas arriba).
 
 ## Protocolo de inicio de sesión
 
@@ -15,7 +16,7 @@
 2. Cargar el **perfil del rol** que corresponda al gate activo desde la fábrica (ver abajo).
 3. Cargar el **prompt ejecutable** de esa fase: `prompts/<rol>.md` bajo el repo de la fábrica (`FACTORY_ROOT`).
 4. Proponer **siguientes acciones** alineadas al gate y a los artefactos obligatorios.
-5. Al cerrar trabajo relevante: actualizar `tasks/gate-status.md`, `memory/daily/YYYY-MM-DD.md` y, si aplica, `.factory/state.json`.
+5. Al cerrar trabajo relevante: actualizar `tasks/gate-status.md`, `memory/daily/YYYY-MM-DD.md`, **`docs/project-changelog.md`** (hitos de producto) y, si aplica, `.factory/state.json`.
 
 ## Dónde están perfiles y prompts (fábrica)
 

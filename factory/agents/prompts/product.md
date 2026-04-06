@@ -22,7 +22,7 @@ Producir o actualizar:
 
 - [ ] PRD con problema claro, alcance y KPI de validación semanal.
 - [ ] RF y RNF con criterios GIVEN/WHEN/THEN donde aplique.
-- [ ] `tasks/gate-status.md` actualizado (G1) y entrada en `memory/daily/YYYY-MM-DD.md`.
+- [ ] `tasks/gate-status.md` actualizado (G1), entrada en `memory/daily/YYYY-MM-DD.md` y línea en **`docs/project-changelog.md`** (cierre de fase / gate si aplica).
 
 ## Después
 

@@ -9,6 +9,8 @@ En el repo del producto, **`CLAUDE.md`** (y `tasks/gate-status.md`) definen el p
 
 **Intake de negocio:** **`docs/intake/`** (archivos `00`–`08`, mismos nombres en cada proyecto). Ver **`docs/intake/README.md`**.
 
+**Changelog del producto:** **`docs/project-changelog.md`** — definición y construcción (ver `factory/standards/project-changelog.md` en la fábrica).
+
 **Skills:** `./scripts/install-skills.sh` y **`docs/skills-profiles.md`** (mapa rol → skills del stack).
 
 ## Si este producto es solo su propio repositorio (clon desde template)

@@ -29,3 +29,7 @@ Definición archivo por archivo: ver `template/docs/intake/README.md` en el wrap
 
 - Prompt de producto: leer `docs/intake/00` y `03` antes de proponer cambios al PRD.
 - Contratos de handoff: el output formal sigue siendo `docs/00-prd.md` y siguientes según `factory/agents/handoff-contracts.md`.
+
+## Complemento: línea de tiempo del producto
+
+Los hitos de consolidación del intake y del PRD pueden reflejarse en **`docs/project-changelog.md`** (ver `project-changelog.md` en este mismo directorio de estándares).

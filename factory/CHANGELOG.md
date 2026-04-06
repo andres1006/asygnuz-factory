@@ -1,5 +1,11 @@
 # Factory Changelog
 
+## v1.7.0
+- Estándar **`factory/standards/project-changelog.md`**: bitácora de definición y construcción del producto.
+- Template: **`template/docs/project-changelog.md`** + referencias en `README.md`, `CLAUDE.md`, `docs/tooling-agents.md`.
+- Prompt producto: actualizar `docs/project-changelog.md` al cerrar Gate 1.
+- `intake-documentation.md`: enlace complementario a `docs/project-changelog.md`.
+
 ## v1.6.0
 - Template: carpeta **`docs/intake/`** con estructura fija `00–08` (README + plantillas) para gestión coherente del contexto de negocio antes del PRD.
 - `factory/standards/intake-documentation.md`: estándar de la fábrica para ese intake.
