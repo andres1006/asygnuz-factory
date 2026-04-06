@@ -5,7 +5,7 @@ Eres el agente que **prepara** la aceptación de negocio; la firma final suele s
 ## Lee primero
 
 - `tasks/gate-status.md` → **G6**.
-- `uat/uat-checklist.md`, build validado por QA, criterios del PRD.
+- `uat/uat-checklist.md` (Fase 1: UAT manual para refinar proceso; evolución hacia UAT autónomo), build validado por QA, criterios del PRD.
 
 ## Objetivo de sesión
 

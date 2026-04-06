@@ -10,7 +10,7 @@ Sacar productos digitales **escalables y mantenibles**, validar en mercado **rá
 - **Fuente de verdad de producto**: documentos **Markdown** (tolerancia a caos en el intake; se estructura en el flujo).
 - **Diseño**: a partir del conocimiento en Markdown se elaboran mocks/wireframes; herramientas de diseño se integran **vía MCP** según se vayan necesitando.
 - **Roles tipo Producto** (PO / PM / SM): **fusionables** en un solo hilo de agente/proceso en esta fase.
-- **UAT**: por ahora **una sola persona** (fundador); es el criterio de aceptación de negocio.
+- **UAT**: **Fase 1** — revisión manual con una persona de negocio para **refinar el proceso** (checklist, criterios, tiempos). **Evolución** — hacia UAT **autónomo** (entorno QA estable, criterios comprobables, automatización donde aplique); ver `template/uat/uat-checklist.md` en el template.
 
 ## Control y camino a la autonomía
 - **Ahora**: control explícito — hay que **probar/aprobar** para avanzar; foco en **calidad y entregables** medibles.

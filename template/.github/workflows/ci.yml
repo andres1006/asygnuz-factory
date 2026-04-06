@@ -2,13 +2,31 @@ name: CI
 
 on:
   pull_request:
+    branches: [main, qa]
   push:
-    branches: [ main ]
+    branches: [main, qa]
 
 jobs:
-  placeholder:
+  web:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Placeholder
-        run: echo "Configurar tests/lint/build según stack del proyecto"
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm --filter web lint
+
+      - name: Build
+        run: pnpm --filter web build

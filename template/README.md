@@ -3,11 +3,13 @@
 Plantilla robusta para lanzar productos con entrega semanal, trazabilidad y calidad.
 
 ## Stack por defecto
-- Frontend/App: Next.js
-- UI: Tailwind + shadcn/ui
-- DB: Neon (PostgreSQL)
-- Hosting/CI-CD: Vercel + GitHub
-- Arquitectura: SOLID + Clean Code
+- **Frontend/App:** Next.js (App Router) en `apps/web`
+- **Paquetes:** pnpm (workspace en la raíz del repo)
+- **UI:** Tailwind CSS v4 + shadcn/ui
+- **DB:** Neon (PostgreSQL), cliente `@neondatabase/serverless` en `apps/web/src/lib/db.ts`
+- **Hosting / CI-CD:** Vercel + GitHub Actions (`lint` + `build` en ramas `main` y `qa`)
+- **Ambientes desplegados (por ahora):** **QA** (rama `qa`) y **PROD** (rama `main`) — ver `devops/deployment.md`
+- **Arquitectura:** SOLID + Clean Code
 
 ## Intake — contexto de negocio (estructura fija)
 
@@ -21,7 +23,7 @@ Antes o durante el PRD formal, documentar investigación en **`docs/intake/`** (
 3. **HU**: crear historias en `tasks/hu/` y plan semanal `tasks/sprint-week-XX.md`
 4. **Arquitectura/DB**: definir solución en `architecture/solution-architecture.md` y modelo en `db/data-model.md`
 5. **Desarrollo**: implementar por HU con PRs pequeños
-6. **QA/UAT**: ejecutar plan en `qa/test-plan.md` + validación en `uat/uat-checklist.md`
+6. **QA/UAT**: ejecutar plan en `qa/test-plan.md` + validación en `uat/uat-checklist.md` (Fase 1: UAT manual para refinar proceso; evolución hacia UAT autónomo documentada en ese archivo)
 7. **DevOps/Security**: validar `devops/deployment.md` y `security/security-checklist.md`
 8. **Trazabilidad**: actualizar `traceability/matriz-trazabilidad.md`
 9. **Memoria**: registrar decisiones en `memory/project-memory.md` y diario en `memory/daily/YYYY-MM-DD.md`
@@ -53,16 +55,24 @@ Contratos de entrega entre roles (qué archivo produce cada uno): en la fábrica
 - No release sin UAT + checklist de seguridad básica
 - Toda HU debe mapear a PRD y evidencia de test
 
+## Desarrollo local de la app
+
+Ver **[docs/local-development.md](docs/local-development.md)** (`pnpm install`, `pnpm dev` desde la raíz).
+
 ## Estructura
 Ver árbol de carpetas en este README al final.
 
 ```text
 .
+├─ apps/
+│  └─ web/                 # Next.js + Tailwind + shadcn (Neon via DATABASE_URL)
+├─ pnpm-workspace.yaml
+├─ package.json            # scripts: dev, build, lint (delegan a apps/web)
 ├─ docs/
-│  ├─ intake/          # fuente canónica de contexto negocio (00–08)
-│  ├─ project-changelog.md  # definición + construcción (línea de tiempo)
+│  ├─ local-development.md
+│  ├─ intake/              # contexto negocio (00–08)
+│  ├─ project-changelog.md
 │  ├─ 00-prd.md
-│  ├─ 01-requisitos-funcionales.md
 │  └─ …
 ├─ design/
 ├─ tasks/

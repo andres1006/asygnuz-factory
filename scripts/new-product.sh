@@ -29,6 +29,9 @@ fi
 
 chmod +x "$DEST/scripts/check-gate.sh" "$DEST/scripts/install-skills.sh" 2>/dev/null || true
 
+echo "==> Limpiando node_modules copiados (si existían en el template local)"
+rm -rf "$DEST/node_modules" "$DEST/apps/web/node_modules" 2>/dev/null || true
+
 echo "==> git init en el producto"
 (
   cd "$DEST"

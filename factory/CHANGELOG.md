@@ -1,5 +1,13 @@
 # Factory Changelog
 
+## v1.8.0
+- Template: app **Next.js 16** en `apps/web` con **pnpm** workspace, **Tailwind v4**, **shadcn/ui**, cliente **Neon** (`@neondatabase/serverless`, `src/lib/db.ts`).
+- CI GitHub Actions: `pnpm install`, lint y build en ramas **`main`** y **`qa`**; `gate-check` también en PRs hacia `qa`.
+- `devops/deployment.md`: ambientes **QA** (`qa`) y **PROD** (`main`) en Vercel; notas de monorepo.
+- `docs/local-development.md`, `apps/web/.env.example`, `template/.gitignore` raíz; `new-product.sh` elimina `node_modules` copiados.
+- UAT: `uat-checklist.md` + `incubator-model.md` + prompt UAT alineados a **Fase 1 (refinar proceso)** y evolución a **UAT autónomo**.
+- `engineering-standards.md`: stack con pnpm y rutas `apps/web`.
+
 ## v1.7.0
 - Estándar **`factory/standards/project-changelog.md`**: bitácora de definición y construcción del producto.
 - Template: **`template/docs/project-changelog.md`** + referencias en `README.md`, `CLAUDE.md`, `docs/tooling-agents.md`.

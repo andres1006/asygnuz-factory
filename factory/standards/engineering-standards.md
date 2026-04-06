@@ -1,7 +1,7 @@
 # Estándares de ingeniería (fábrica)
 
 ## Stack de referencia
-Definido en `template/README.md` (Next.js, Tailwind/shadcn, Neon, Vercel, GitHub). Nuevos proyectos parten de ahí salvo decisión explícita en ADR de proyecto o de fábrica.
+Definido en `template/README.md`: **Next.js** en `apps/web`, **pnpm** workspace en la raíz del producto, **Tailwind + shadcn/ui**, **Neon**, **Vercel** (QA rama `qa`, PROD rama `main`), CI en **GitHub Actions**. Nuevos proyectos parten de ahí salvo decisión explícita en ADR de proyecto o de fábrica.
 
 ## Pull requests
 - Tamaño pequeño, una intención por PR.
