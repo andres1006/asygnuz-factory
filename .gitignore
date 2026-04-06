@@ -2,3 +2,6 @@
 # No versionar contenido anidado de projects/ en el repo wrapper de la empresa.
 projects/*
 !projects/README.md
+
+# Dependencias JS en cualquier ruta del wrapper (p. ej. tooling bajo factory/)
+node_modules/
