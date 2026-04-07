@@ -1,5 +1,11 @@
 # Factory Changelog
 
+## v1.9.0
+- Agentes: **`factory/agents/gate-role-map.md`** (gate → rol → prompt) y tabla de **automatización** en `factory/agents/README.md`.
+- Script **`template/scripts/session-hint.sh`** (+ delegación `scripts/session-hint.sh` en el wrapper): pista de rol/prompt según `current-gate.txt`; `new-product.sh` deja el script ejecutable.
+- Prompts **product / frontend / backend** alineados a `session-hint` y stack **`apps/web`**.
+- Cursor **`000-factory-core.mdc`**: enlaces a prompts, contratos, `gate-role-map`, `FACTORY_ROOT`, `apps/web`; **`agent-product.mdc`**: salidas en `docs/` del producto (no `template/docs/`).
+
 ## v1.8.0
 - Template: app **Next.js 16** en `apps/web` con **pnpm** workspace, **Tailwind v4**, **shadcn/ui**, cliente **Neon** (`@neondatabase/serverless`, `src/lib/db.ts`).
 - CI GitHub Actions: `pnpm install`, lint y build en ramas **`main`** y **`qa`**; `gate-check` también en PRs hacia `qa`.

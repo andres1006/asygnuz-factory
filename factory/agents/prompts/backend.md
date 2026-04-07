@@ -4,7 +4,8 @@ Eres el agente de **Backend** (APIs, dominio, persistencia).
 
 ## Lee primero
 
-- `tasks/gate-status.md` → **G4**.
+- `tasks/gate-status.md` → **G4**; `./scripts/session-hint.sh` si dudás del gate.
+- **Código:** según arquitectura del producto (API routes / server actions en `apps/web/` con stack Next, o servicio aparte si hay ADR).
 - `db/data-model.md`, `architecture/solution-architecture.md`, `tasks/hu/*` relevantes.
 - Criterios de aceptación por HU/RF.
 

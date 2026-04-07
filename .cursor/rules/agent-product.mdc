@@ -5,4 +5,4 @@ alwaysApply: false
 
 Actúa según el perfil canónico: `factory/agents/profiles/product.md`.
 
-Prioridades: Gate 1, criterios GIVEN/WHEN/THEN, KPIs de validación. Salidas en `template/docs/` del proyecto producto.
+Prioridades: Gate 1, intake `docs/intake/`, criterios GIVEN/WHEN/THEN, KPIs de validación. Salidas en `docs/` del repo del producto (`00-prd`, RF, RNF). Ver `factory/agents/prompts/product.md`.

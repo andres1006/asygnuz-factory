@@ -5,9 +5,10 @@ Los perfiles viven aquí en **Markdown** para que cualquier herramienta (Cursor,
 ## Guía rápida (trabajo diario)
 
 1. **Estado del producto:** en el repo del producto → `tasks/gate-status.md`, `tasks/current-gate.txt`.
-2. **Contrato de entregables entre roles:** [handoff-contracts.md](handoff-contracts.md) (qué archivo produce cada rol y quién lo lee).
-3. **Prompt listo para pegar/cargar en el IDE:** [prompts/](prompts/) → un archivo por rol (objetivo de sesión + criterios de salida).
-4. **Contexto y comportamiento del rol:** tabla de perfiles abajo → [profiles/](profiles/).
+2. **Mapa gate → rol → prompt:** [gate-role-map.md](gate-role-map.md) (qué agente usar según `tasks/current-gate.txt`).
+3. **Contrato de entregables entre roles:** [handoff-contracts.md](handoff-contracts.md) (qué archivo produce cada rol y quién lo lee).
+4. **Prompt listo para pegar/cargar en el IDE:** [prompts/](prompts/) → un archivo por rol (objetivo de sesión + criterios de salida).
+5. **Contexto y comportamiento del rol:** tabla de perfiles abajo → [profiles/](profiles/).
 
 Sin los **prompts** y **handoff-contracts**, el perfil solo describe el rol; el prompt ordena la sesión de forma ejecutable.
 
@@ -15,6 +16,7 @@ Sin los **prompts** y **handoff-contracts**, el perfil solo describe el rol; el 
 
 | Recurso | Enlace | Uso |
 |---------|--------|-----|
+| Gate → rol | [gate-role-map.md](gate-role-map.md) | Tabla rápida por `current-gate.txt` |
 | Handoffs / artefactos | [handoff-contracts.md](handoff-contracts.md) | Contrato formal archivo → siguiente rol |
 | Prompts por fase | [prompts/](prompts/) | Inicio de sesión por gate/rol |
 | Cadena de roles | [handoff-flow.md](handoff-flow.md) | Orden macro Producto → … → Release |
@@ -44,6 +46,17 @@ Sin los **prompts** y **handoff-contracts**, el perfil solo describe el rol; el 
 | **Cualquier otra** | Abre perfil + prompt o pega rutas al contexto. |
 
 Instalación de skills del stack (wrapper): `./scripts/install-skills.sh`. En repo **solo template**: `./scripts/install-skills.sh` dentro del proyecto (copiado desde `template/scripts/`).
+
+## Automatización ligada a agentes
+
+| Acción | Dónde |
+|--------|--------|
+| Ver rol/prompt sugerido para el gate actual | En el producto: `./scripts/session-hint.sh` · Desde el wrapper: `./scripts/session-hint.sh projects/<nombre>` |
+| Verificar archivos mínimos del gate | `./scripts/check-gate.sh [N]` |
+| CI build/lint | `.github/workflows/ci.yml` (producto) |
+| CI gate (archivos) | `.github/workflows/gate-check.yml` (producto) |
+
+Los prompts no se ejecutan solos: el script **orienta** qué abrir; la ejecución sigue siendo en el IDE o cliente con `FACTORY_ROOT` apuntando al wrapper.
 
 ## Relación con `template/`
 

@@ -27,7 +27,7 @@ if [[ -d "$ROOT/.agents/skills" ]]; then
   [[ -d "$ROOT/.claude" ]] && cp -R "$ROOT/.claude" "$DEST/" || true
 fi
 
-chmod +x "$DEST/scripts/check-gate.sh" "$DEST/scripts/install-skills.sh" 2>/dev/null || true
+chmod +x "$DEST/scripts/check-gate.sh" "$DEST/scripts/install-skills.sh" "$DEST/scripts/session-hint.sh" 2>/dev/null || true
 
 echo "==> Limpiando node_modules copiados (si existían en el template local)"
 rm -rf "$DEST/node_modules" "$DEST/apps/web/node_modules" 2>/dev/null || true

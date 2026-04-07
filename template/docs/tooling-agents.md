@@ -5,7 +5,7 @@ Los perfiles **canónicos** viven en el repositorio de la fábrica (`asygnuz-fac
 ## Si desarrollas dentro del monorepo (wrapper + template)
 Abre directamente `factory/agents/profiles/<rol>.md`, `factory/agents/prompts/<rol>.md` y `factory/agents/handoff-contracts.md`; las reglas `.cursor/rules/agent-*.mdc` viven en el wrapper.
 
-En el repo del producto, **`CLAUDE.md`** (y `tasks/gate-status.md`) definen el protocolo de inicio para no perder el estado del pipeline entre sesiones.
+En el repo del producto, **`CLAUDE.md`** (y `tasks/gate-status.md`) definen el protocolo de inicio para no perder el estado del pipeline entre sesiones. **`./scripts/session-hint.sh`** imprime el rol y el archivo de prompt sugeridos según `tasks/current-gate.txt` (mapa en la fábrica: `factory/agents/gate-role-map.md`).
 
 **Intake de negocio:** **`docs/intake/`** (archivos `00`–`08`, mismos nombres en cada proyecto). Ver **`docs/intake/README.md`**.
 

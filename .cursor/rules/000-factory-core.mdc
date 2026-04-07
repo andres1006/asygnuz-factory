@@ -6,8 +6,11 @@ alwaysApply: true
 # POC Factory (wrapper)
 
 - Perfiles de agente (canónicos): `factory/agents/README.md` y `factory/agents/profiles/*.md`.
-- Handoffs: `factory/agents/handoff-flow.md`.
+- Mapa gate → rol → prompt: `factory/agents/gate-role-map.md`.
+- Prompts ejecutables por sesión: `factory/agents/prompts/*.md`.
+- Handoffs: `factory/agents/handoff-flow.md`, contratos: `factory/agents/handoff-contracts.md`.
 - Gates: `factory/governance/quality-gates.md`.
 - Tareas: `factory/standards/task-specification.md`.
+- En repos de **producto** (template): código Next en `apps/web/`; pnpm desde la raíz del producto.
 
-Para un rol específico, activa la regla **agent-\*** correspondiente o abre el `.md` del perfil.
+Para un rol específico, activa la regla **agent-\*** correspondiente o abre el `.md` del perfil. Si trabajás en `projects/<producto>/`, definí `FACTORY_ROOT` al path de este wrapper para resolver `factory/agents/...`.

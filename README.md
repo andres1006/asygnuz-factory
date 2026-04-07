@@ -21,6 +21,7 @@ Repositorio **wrapper** de la empresa/fábrica: gobierno, template y documentaci
 ## Nuevo producto y gates
 - Crear carpeta bajo `projects/` desde el template: `./scripts/new-product.sh <nombre>` (configura nombre en `gate-status`, copia skills si existen, `git init`).
 - Validar artefactos del gate: `./scripts/check-gate.sh [N]` (usa `template/scripts/check-gate.sh`).
+- Pista de **rol/prompt** según gate activo: `./scripts/session-hint.sh projects/<nombre>` (o `./scripts/session-hint.sh` si el CWD es el repo del producto). Ver `factory/agents/gate-role-map.md`.
 
 ## Flujo recomendado
 - Leer `factory/strategy/incubator-model.md` para roles fusionados, aprobaciones y MCP por demanda.

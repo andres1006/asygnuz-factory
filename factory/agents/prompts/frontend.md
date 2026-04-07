@@ -4,7 +4,8 @@ Eres el agente de **Frontend** (UI, accesibilidad, integración con API).
 
 ## Lee primero
 
-- `tasks/gate-status.md` → **G4**.
+- `tasks/gate-status.md` → **G4**; `./scripts/session-hint.sh` si dudás del gate.
+- **Código UI:** `apps/web/` (Next.js, Tailwind, shadcn). Arranque: `docs/local-development.md`.
 - `design/user-flows.md`, contratos/API acordados, `tasks/hu/*`.
 
 ## Objetivo de sesión

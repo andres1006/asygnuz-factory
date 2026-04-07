@@ -31,11 +31,12 @@ Variable opcional: **`FACTORY_ROOT`** = ruta al clon del repo wrapper (p. ej. `a
 
 Si `FACTORY_ROOT` no está definido y trabajás en monorepo `POC-factory`, usa rutas relativas: `../../factory/agents/...` desde `projects/<producto>/` o la profundidad que corresponda.
 
-## Validación de gates
+## Validación de gates y pista de agente
 
 Desde la raíz del repo del producto:
 
 ```bash
+./scripts/session-hint.sh
 ./scripts/check-gate.sh "$(cat tasks/current-gate.txt)"
 ```
 
