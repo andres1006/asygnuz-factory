@@ -1,7 +1,21 @@
 {
-  "version": 1,
+  "version": 2,
   "product": "[nombre-producto]",
   "current_gate": 1,
   "updated_at": null,
-  "note": "Opcional: mantener sincronizado con tasks/gate-status.md y tasks/current-gate.txt"
+  "note": "Mantener sincronizado con tasks/gate-status.md y tasks/current-gate.txt. Schema completo: factory/agents/orchestrator-state-schema.md",
+
+  "gates": {
+    "G1": { "status": "pending" },
+    "G2": { "status": "pending" },
+    "G3": { "status": "pending" },
+    "G4": { "status": "pending" },
+    "G5": { "status": "pending" },
+    "G6": { "status": "pending" },
+    "G7": { "status": "pending" }
+  },
+
+  "human_approval_pending": null,
+  "blocked": null,
+  "last_orchestrator_run": null
 }

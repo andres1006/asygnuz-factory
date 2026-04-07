@@ -40,6 +40,15 @@ Desde la raíz del repo del producto:
 ./scripts/check-gate.sh "$(cat tasks/current-gate.txt)"
 ```
 
+## Modos de operación
+
+**Manual (un agente a la vez):** usá `session-hint.sh` → cargá el perfil + prompt del rol activo → trabajá.
+
+**Orquestado (Agent Teams):** cargá `$FACTORY_ROOT/factory/agents/prompts/orchestrator.md` en Claude Code. El Orchestrator lee `gate-status.md`, spawna los agentes correctos (en paralelo en G3, G4 y G7), coordina merges, y solo pausa para tu aprobación en G1, G2, G4 (merge), G6 y G7 (release).
+
+Patrones de teams: `$FACTORY_ROOT/factory/agents/team-patterns.md`
+Coordinación paralela: `$FACTORY_ROOT/factory/agents/parallel-coordination.md`
+
 ## Perfiles (IDs)
 
-`product` | `design` | `architecture` | `db` | `backend` | `frontend` | `qa` | `uat` | `devops` | `security`
+`orchestrator` | `product` | `design` | `architecture` | `db` | `backend` | `frontend` | `qa` | `uat` | `devops` | `security`

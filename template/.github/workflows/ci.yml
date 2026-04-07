@@ -28,5 +28,10 @@ jobs:
       - name: Lint
         run: pnpm --filter web lint
 
+      - name: Test
+        run: pnpm --filter web test --coverage --reporter=verbose
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL_TEST }}
+
       - name: Build
         run: pnpm --filter web build

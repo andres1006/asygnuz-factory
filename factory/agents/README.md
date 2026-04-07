@@ -2,6 +2,14 @@
 
 Los perfiles viven aquí en **Markdown** para que cualquier herramienta (Cursor, Claude Code, Antigravity, otros) pueda **leer el mismo contenido** sin lock-in. Las reglas específicas de cada IDE son **delgadas** y apuntan a estos archivos.
 
+## Dos modos de operación
+
+**Modo manual (un agente a la vez):** el humano lee `tasks/gate-status.md`, elige el rol, pega el prompt en el IDE y trabaja.
+
+**Modo orquestado (Agent Teams):** el Orchestrator lee el estado, spawna los agentes correctos (en paralelo donde aplica), coordina merges, y solo pausa cuando el humano necesita aprobar. Ver [prompts/orchestrator.md](prompts/orchestrator.md) y [team-patterns.md](team-patterns.md).
+
+---
+
 ## Guía rápida (trabajo diario)
 
 1. **Estado del producto:** en el repo del producto → `tasks/gate-status.md`, `tasks/current-gate.txt`.
@@ -9,13 +17,18 @@ Los perfiles viven aquí en **Markdown** para que cualquier herramienta (Cursor,
 3. **Contrato de entregables entre roles:** [handoff-contracts.md](handoff-contracts.md) (qué archivo produce cada rol y quién lo lee).
 4. **Prompt listo para pegar/cargar en el IDE:** [prompts/](prompts/) → un archivo por rol (objetivo de sesión + criterios de salida).
 5. **Contexto y comportamiento del rol:** tabla de perfiles abajo → [profiles/](profiles/).
+6. **Framework de autonomía:** [autonomy-framework.md](autonomy-framework.md) — qué decide el agente solo vs escala al humano.
 
 Sin los **prompts** y **handoff-contracts**, el perfil solo describe el rol; el prompt ordena la sesión de forma ejecutable.
 
-## Contratos, prompts y flujo
+## Contratos, prompts, flujo y orquestación
 
 | Recurso | Enlace | Uso |
 |---------|--------|-----|
+| Orchestrator (modo teams) | [prompts/orchestrator.md](prompts/orchestrator.md) | Coordina el pipeline completo con agentes paralelos |
+| Patrones de Agent Teams | [team-patterns.md](team-patterns.md) | A: secuencial · B: paralelo · C: revisor · D: escalación |
+| Coordinación paralela | [parallel-coordination.md](parallel-coordination.md) | Worktree isolation, merge, ownership de archivos |
+| Autonomía | [autonomy-framework.md](autonomy-framework.md) | 🟢🟡🔴 por gate: qué hace solo vs escala |
 | Gate → rol | [gate-role-map.md](gate-role-map.md) | Tabla rápida por `current-gate.txt` |
 | Handoffs / artefactos | [handoff-contracts.md](handoff-contracts.md) | Contrato formal archivo → siguiente rol |
 | Prompts por fase | [prompts/](prompts/) | Inicio de sesión por gate/rol |
@@ -25,6 +38,7 @@ Sin los **prompts** y **handoff-contracts**, el perfil solo describe el rol; el 
 
 | ID | Perfil | Perfil (contexto) | Prompt (sesión) |
 |----|--------|-------------------|-----------------|
+| `orchestrator` | Orchestrator | [profiles/orchestrator.md](profiles/orchestrator.md) | [prompts/orchestrator.md](prompts/orchestrator.md) |
 | `product` | Producto | [profiles/product.md](profiles/product.md) | [prompts/product.md](prompts/product.md) |
 | `design` | Diseño | [profiles/design.md](profiles/design.md) | [prompts/design.md](prompts/design.md) |
 | `architecture` | Arquitectura | [profiles/architecture.md](profiles/architecture.md) | [prompts/architecture.md](prompts/architecture.md) |
