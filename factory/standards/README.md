@@ -4,7 +4,7 @@ Aquí se centralizan las **reglas transversales** que todos los proyectos deben 
 
 ## Contenido
 - `engineering-standards.md` — convenciones técnicas mínimas (stack, PRs, calidad).
-- `task-specification.md` — campos mínimos de una tarea (quién, para qué, criterios de aceptación).
+- `task-specification.md` — campos mínimos de una tarea (nivel base obligatorio; **SDD con gentle-ai opcional** por producto).
 - `intake-documentation.md` — estructura estándar `docs/intake/` (contexto de negocio antes del PRD).
 - `project-changelog.md` — bitácora de definición y construcción del producto (`docs/project-changelog.md`).
 

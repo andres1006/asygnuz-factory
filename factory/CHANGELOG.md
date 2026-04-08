@@ -1,5 +1,10 @@
 # Factory Changelog
 
+## v1.10.0
+- **SDD / gentle-ai:** política **opcional por producto**; obligatorio el **nivel base** de tareas (`standards/task-specification.md`). Gates operables con PRD/RF + `check-gate.sh` sin `specs/changes/` hasta que el equipo active SDD (ADR o `memory/project-memory.md`).
+- `factory/agents/README.md`: sin bloqueo de agentes por “falta de SDD” si el modo no está activo.
+- `factory/README.md`, `standards/README.md`: texto alineado.
+
 ## v1.9.0
 - Agentes: **`factory/agents/gate-role-map.md`** (gate → rol → prompt) y tabla de **automatización** en `factory/agents/README.md`.
 - Script **`template/scripts/session-hint.sh`** (+ delegación `scripts/session-hint.sh` en el wrapper): pista de rol/prompt según `current-gate.txt`; `new-product.sh` deja el script ejecutable.
