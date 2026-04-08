@@ -21,6 +21,20 @@ Los perfiles viven aquí en **Markdown** para que cualquier herramienta (Cursor,
 
 Sin los **prompts** y **handoff-contracts**, el perfil solo describe el rol; el prompt ordena la sesión de forma ejecutable.
 
+## Política obligatoria: SDD con gentle-ai
+
+Para **todos los agentes y tareas** de la fábrica (incluyendo proyectos generados desde `template/`), el flujo estándar es:
+
+1. `gentle-ai` instalado y disponible en PATH.
+2. Bootstrap SDD del proyecto ejecutado con `/sdd-init`.
+3. Registro de skills/contexto actualizado con `skill-registry`.
+4. Control de cambios en specs/tareas con:
+   - `.factory/sdd-control.md`
+   - `tasks/spec-index.md`
+   - `specs/changes/<ID>/` (spec, design, tasks, verify)
+
+No se considera un gate operable si el control SDD obligatorio está incompleto.
+
 ## Contratos, prompts, flujo y orquestación
 
 | Recurso | Enlace | Uso |
