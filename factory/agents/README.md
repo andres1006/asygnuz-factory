@@ -56,6 +56,7 @@ Los agentes no deben bloquear trabajo por “falta de SDD” si el producto no a
 | `uat` | UAT | [profiles/uat.md](profiles/uat.md) | [prompts/uat.md](prompts/uat.md) |
 | `devops` | DevOps | [profiles/devops.md](profiles/devops.md) | [prompts/devops.md](prompts/devops.md) |
 | `security` | Security | [profiles/security.md](profiles/security.md) | [prompts/security.md](prompts/security.md) |
+| `dependencies` | Dependencies (transversal) | [profiles/dependencies.md](profiles/dependencies.md) | [prompts/dependencies.md](prompts/dependencies.md) |
 
 ## Herramientas (transparente)
 
