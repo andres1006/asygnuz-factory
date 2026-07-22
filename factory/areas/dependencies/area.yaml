@@ -1,0 +1,53 @@
+id: dependencies
+name: Dependencies
+status: active
+description: Mantenimiento transversal de dependencias, CVEs y lockfiles con PRs pequeños y CI verde.
+roles:
+  - dependencies
+gates:
+  - 5
+  - 7
+owns:
+  - apps/web/package.json
+  - pnpm-lock.yaml
+  - dependencies/update-log.md
+  - memory/daily/*-dependencies.md
+inputs:
+  - apps/web/package.json
+  - pnpm-lock.yaml
+  - security/security-report.md
+outputs:
+  - dependencies/update-log.md
+  - memory/daily/*-dependencies.md
+handoffs:
+  - to: qa
+    artifact: dependency PR
+    purpose: Revisar regresiones cuando el bump toca runtime, framework o tests.
+  - to: security
+    artifact: dependencies/update-log.md
+    purpose: Marcar CVEs cerrados o bloqueos sin fix upstream.
+  - to: devops
+    artifact: dependency PR
+    purpose: Coordinar cambios de runtime, pnpm, CI o peer dependencies.
+policies:
+  autonomous:
+    - patch_bumps
+    - minor_bumps_without_breaking_notes
+    - high_or_critical_cve_with_upstream_fix
+  human_required:
+    - major_bumps
+    - runtime_changes
+    - stack_reference_changes
+    - high_or_critical_cve_without_upstream_fix
+metrics:
+  - outdated_dependency_count
+  - high_critical_cve_count
+  - dependency_pr_success_rate
+references:
+  profiles:
+    - factory/agents/profiles/dependencies.md
+  prompts:
+    - factory/agents/prompts/dependencies.md
+  playbooks:
+    - factory/playbooks/security-playbook.md
+    - factory/playbooks/qa-playbook.md

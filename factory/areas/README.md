@@ -26,6 +26,7 @@ artefactos, gates, handoffs, métricas y límites operativos. No reemplaza
 - `uat/` — validación de negocio y go/no-go.
 - `devops/` — entornos, CI/CD, deploys y operación técnica.
 - `security/` — baseline, secretos, threat checks y reporte de seguridad.
+- `dependencies/` — mantenimiento transversal de dependencias, lockfiles y CVEs.
 
 ## Composición por cliente
 

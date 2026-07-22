@@ -1,6 +1,6 @@
 # Inventario
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 19:42:36 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -30,6 +30,7 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/agents/profiles/architecture.md` | markdown |
 | `factory/agents/profiles/backend.md` | markdown |
 | `factory/agents/profiles/db.md` | markdown |
+| `factory/agents/profiles/dependencies.md` | markdown |
 | `factory/agents/profiles/design.md` | markdown |
 | `factory/agents/profiles/devops.md` | markdown |
 | `factory/agents/profiles/frontend.md` | markdown |
@@ -42,6 +43,7 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/agents/prompts/architecture.md` | markdown |
 | `factory/agents/prompts/backend.md` | markdown |
 | `factory/agents/prompts/db.md` | markdown |
+| `factory/agents/prompts/dependencies.md` | markdown |
 | `factory/agents/prompts/design.md` | markdown |
 | `factory/agents/prompts/devops.md` | markdown |
 | `factory/agents/prompts/frontend.md` | markdown |
@@ -59,6 +61,8 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/areas/area-schema.md` | markdown |
 | `factory/areas/data/README.md` | markdown |
 | `factory/areas/data/area.yaml` | yaml |
+| `factory/areas/dependencies/README.md` | markdown |
+| `factory/areas/dependencies/area.yaml` | yaml |
 | `factory/areas/design/README.md` | markdown |
 | `factory/areas/design/area.yaml` | yaml |
 | `factory/areas/development/README.md` | markdown |
@@ -160,7 +164,6 @@ Generado: 2026-07-22 19:16:30 UTC
 | `template/docs/intake/08-anexos.md` | markdown |
 | `template/docs/intake/README.md` | markdown |
 | `template/docs/local-development.md` | markdown |
-| `template/docs/marketing/00-marketing-brief.md` | markdown |
 | `template/docs/project-changelog.md` | markdown |
 | `template/docs/skills-profiles.md` | markdown |
 | `template/docs/tooling-agents.md` | markdown |

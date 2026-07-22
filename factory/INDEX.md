@@ -39,6 +39,8 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - areas/devops/area.yaml
 - areas/security/README.md
 - areas/security/area.yaml
+- areas/dependencies/README.md
+- areas/dependencies/area.yaml
 
 ## Agency
 - agency/README.md
@@ -113,6 +115,7 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - agents/prompts/uat.md
 - agents/prompts/devops.md
 - agents/prompts/security.md
+- agents/prompts/dependencies.md
 - agents/profiles/marketing.md
 - agents/profiles/product.md
 - agents/profiles/design.md
@@ -124,6 +127,7 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - agents/profiles/uat.md
 - agents/profiles/devops.md
 - agents/profiles/security.md
+- agents/profiles/dependencies.md
 
 ## Playbooks por rol
 - playbooks/roles-and-handoffs.md

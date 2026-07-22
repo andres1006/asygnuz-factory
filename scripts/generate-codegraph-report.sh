@@ -97,19 +97,25 @@ write_header "Agent role map" "$OUT_DIR/agent-role-map.md"
   echo
   echo "| Rol | Perfil | Prompt | Playbook | Estado |"
   echo "|-----|--------|--------|----------|--------|"
-  roles=(marketing product design architecture db backend frontend qa uat devops security)
+  roles=(marketing product design architecture db backend frontend qa uat devops security dependencies)
   for role in "${roles[@]}"; do
     profile="factory/agents/profiles/$role.md"
     prompt="factory/agents/prompts/$role.md"
     if [[ "$role" == "db" ]]; then
       playbook="factory/playbooks/architecture-playbook.md"
+    elif [[ "$role" == "dependencies" ]]; then
+      playbook="factory/playbooks/security-playbook.md + factory/playbooks/qa-playbook.md"
     else
       playbook="factory/playbooks/$role-playbook.md"
     fi
     status="OK"
     [[ -f "$profile" ]] || status="falta perfil"
     [[ -f "$prompt" ]] || status="falta prompt"
-    [[ -f "$playbook" ]] || status="falta playbook"
+    if [[ "$role" == "dependencies" ]]; then
+      [[ -f "factory/playbooks/security-playbook.md" && -f "factory/playbooks/qa-playbook.md" ]] || status="falta playbook"
+    else
+      [[ -f "$playbook" ]] || status="falta playbook"
+    fi
     echo "| \`$role\` | \`$profile\` | \`$prompt\` | \`$playbook\` | $status |"
   done
   echo "| \`orchestrator\` | \`factory/agents/profiles/orchestrator.md\` | \`factory/agents/prompts/orchestrator.md\` | \`factory/agents/team-patterns.md\` | OK |"

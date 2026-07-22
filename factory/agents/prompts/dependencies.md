@@ -73,12 +73,13 @@ Para cada grupo marcado 🟢:
 
 ```bash
 cd apps/web
-pnpm update <pkg1> <pkg2> ... --latest    # usar --latest solo si respeta el rango semver acordado
+pnpm update <pkg1> <pkg2> ...             # respeta rangos declarados en package.json
+# Usar --latest solo para upgrades explícitamente aprobados (🟡/ADR si aplica).
 cd -
 
 # Validación local rápida
 pnpm --filter web lint
-pnpm --filter web test
+pnpm --filter web test   # solo si apps/web/package.json define script "test"; si no existe, registrá "N/A"
 pnpm --filter web build
 ```
 
@@ -127,7 +128,7 @@ Un PR por grupo aplicado (o un PR combinado si todos pasaron y la diff total < 2
 - Título: ver convención del Paso 4.
 - Body obligatorio:
   - Lista de paquetes con versión from → to
-  - Resultado de `pnpm lint`, `pnpm test`, `pnpm build` locales
+  - Resultado de `pnpm lint`, `pnpm test` si existe, `pnpm build` locales
   - CVEs cerrados (si aplica)
   - Nota de handoff (a QA / Security / DevOps) cuando corresponda
 

@@ -1,6 +1,6 @@
 # Area map
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 19:42:36 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -10,6 +10,7 @@ Generado: 2026-07-22 19:16:30 UTC
 |------|-------|-------|---------------------|
 | `architecture` | `architecture ` | `3 ` | 2 |
 | `data` | `db ` | `3 ` | 1 |
+| `dependencies` | `dependencies ` | `5 7 ` | 3 |
 | `design` | `design ` | `2 ` | 2 |
 | `development` | `backend frontend ` | `4 ` | 1 |
 | `devops` | `devops ` | `7 ` | 1 |

@@ -78,6 +78,7 @@ operativo y el gate donde participa. Si una ruta cambia, actualizá esta matriz,
 | `uat` | 6 | [profiles/uat.md](profiles/uat.md) | [prompts/uat.md](prompts/uat.md) | [../playbooks/uat-playbook.md](../playbooks/uat-playbook.md) | `uat/uat-checklist.md`, `uat/uat-results-*.md` |
 | `devops` | 7 | [profiles/devops.md](profiles/devops.md) | [prompts/devops.md](prompts/devops.md) | [../playbooks/devops-playbook.md](../playbooks/devops-playbook.md) | `devops/deployment.md`, pipelines |
 | `security` | 7 | [profiles/security.md](profiles/security.md) | [prompts/security.md](prompts/security.md) | [../playbooks/security-playbook.md](../playbooks/security-playbook.md) | `security/security-checklist.md`, `security/security-report.md` |
+| `dependencies` | transversal, 5, 7 | [profiles/dependencies.md](profiles/dependencies.md) | [prompts/dependencies.md](prompts/dependencies.md) | [../playbooks/security-playbook.md](../playbooks/security-playbook.md), [../playbooks/qa-playbook.md](../playbooks/qa-playbook.md) | `dependencies/update-log.md`, dependency PRs, `memory/daily/*-dependencies.md` |
 
 ## Herramientas (transparente)
 

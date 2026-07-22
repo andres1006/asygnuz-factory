@@ -1,6 +1,6 @@
 # Drift checks
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 19:42:36 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -10,6 +10,7 @@ Generado: 2026-07-22 19:16:30 UTC
 - ✅ Perfil con prompt: `architecture`.
 - ✅ Perfil con prompt: `backend`.
 - ✅ Perfil con prompt: `db`.
+- ✅ Perfil con prompt: `dependencies`.
 - ✅ Perfil con prompt: `design`.
 - ✅ Perfil con prompt: `devops`.
 - ✅ Perfil con prompt: `frontend`.

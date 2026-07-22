@@ -1,6 +1,6 @@
 # Markdown links
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 19:42:36 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -47,6 +47,8 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/agents/README.md` | `prompts/devops.md` |
 | `factory/agents/README.md` | `profiles/security.md` |
 | `factory/agents/README.md` | `prompts/security.md` |
+| `factory/agents/README.md` | `profiles/dependencies.md` |
+| `factory/agents/README.md` | `prompts/dependencies.md` |
 | `factory/agents/README.md` | `profiles/marketing.md` |
 | `factory/agents/README.md` | `prompts/marketing.md` |
 | `factory/agents/README.md` | `../playbooks/marketing-playbook.md` |
@@ -80,7 +82,10 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/agents/README.md` | `profiles/security.md` |
 | `factory/agents/README.md` | `prompts/security.md` |
 | `factory/agents/README.md` | `../playbooks/security-playbook.md` |
-| `factory/agents/gate-role-map.md` | `prompts/marketing.md` |
+| `factory/agents/README.md` | `profiles/dependencies.md` |
+| `factory/agents/README.md` | `prompts/dependencies.md` |
+| `factory/agents/README.md` | `../playbooks/security-playbook.md` |
+| `factory/agents/README.md` | `../playbooks/qa-playbook.md` |
 | `factory/agents/gate-role-map.md` | `prompts/product.md` |
 | `factory/agents/gate-role-map.md` | `prompts/design.md` |
 | `factory/agents/gate-role-map.md` | `prompts/architecture.md` |
@@ -96,6 +101,7 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/agents/profiles/architecture.md` | `../prompts/architecture.md` |
 | `factory/agents/profiles/backend.md` | `../prompts/backend.md` |
 | `factory/agents/profiles/db.md` | `../prompts/db.md` |
+| `factory/agents/profiles/dependencies.md` | `../prompts/dependencies.md` |
 | `factory/agents/profiles/design.md` | `../prompts/design.md` |
 | `factory/agents/profiles/devops.md` | `../prompts/devops.md` |
 | `factory/agents/profiles/frontend.md` | `../prompts/frontend.md` |
@@ -124,6 +130,7 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/profiles/uat` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/profiles/devops` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/profiles/security` |
+| `factory/obsidian/maps/MOC-agents.md` | `factory/agents/profiles/dependencies` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/profiles/orchestrator` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/marketing` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/product` |
@@ -136,6 +143,7 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/uat` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/devops` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/security` |
+| `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/dependencies` |
 | `factory/obsidian/maps/MOC-agents.md` | `factory/agents/prompts/orchestrator` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/README` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/INDEX` |

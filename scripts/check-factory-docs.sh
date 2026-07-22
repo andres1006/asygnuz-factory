@@ -46,14 +46,16 @@ roles=(
   uat
   devops
   security
+  dependencies
 )
 
 for role in "${roles[@]}"; do
   need_file "factory/agents/profiles/$role.md" "perfil $role"
   need_file "factory/agents/prompts/$role.md" "prompt $role"
 
-  if [[ "$role" == "db" ]]; then
+  if [[ "$role" == "db" || "$role" == "dependencies" ]]; then
     # DB está cubierto por architecture-playbook + db profile/prompt.
+    # Dependencies usa security/qa playbooks como referencia transversal.
     continue
   fi
 
@@ -93,6 +95,7 @@ areas=(
   uat
   devops
   security
+  dependencies
 )
 
 for area in "${areas[@]}"; do

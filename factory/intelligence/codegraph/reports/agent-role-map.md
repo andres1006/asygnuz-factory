@@ -1,6 +1,6 @@
 # Agent role map
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 19:42:36 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -19,4 +19,5 @@ Generado: 2026-07-22 19:16:30 UTC
 | `uat` | `factory/agents/profiles/uat.md` | `factory/agents/prompts/uat.md` | `factory/playbooks/uat-playbook.md` | OK |
 | `devops` | `factory/agents/profiles/devops.md` | `factory/agents/prompts/devops.md` | `factory/playbooks/devops-playbook.md` | OK |
 | `security` | `factory/agents/profiles/security.md` | `factory/agents/prompts/security.md` | `factory/playbooks/security-playbook.md` | OK |
+| `dependencies` | `factory/agents/profiles/dependencies.md` | `factory/agents/prompts/dependencies.md` | `factory/playbooks/security-playbook.md + factory/playbooks/qa-playbook.md` | OK |
 | `orchestrator` | `factory/agents/profiles/orchestrator.md` | `factory/agents/prompts/orchestrator.md` | `factory/agents/team-patterns.md` | OK |

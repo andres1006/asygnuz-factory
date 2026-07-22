@@ -18,7 +18,8 @@ El Orchestrator te spawna como worker transversal. No sos parte de la cadena de 
   - `memory/daily/YYYY-MM-DD-dependencies.md`
 - Ejecución de scripts:
   - `pnpm outdated`, `pnpm audit`, `pnpm update <pkg> --latest`
-  - `pnpm --filter web lint`, `pnpm --filter web test`, `pnpm --filter web build`
+  - `pnpm --filter web lint`, `pnpm --filter web build`
+  - `pnpm --filter web test` solo si el producto define script `test`
   - `./scripts/check-gate.sh` (solo lectura del estado; nunca para avanzar gate)
 
 ## Herramientas prohibidas
@@ -87,7 +88,7 @@ No hay archivos compartidos escribibles → merge limpio.
 
 ### Escalación (cuándo llama al humano)
 El agente escala al Orchestrator (que activa Patrón D) si:
-- Un bump `minor`/`patch` rompe `pnpm lint`, `pnpm test` o `pnpm build` y el fix no es una línea.
+- Un bump `minor`/`patch` rompe `pnpm lint`, `pnpm test` si existe o `pnpm build` y el fix no es una línea.
 - CVE `high`/`critical` **sin fix upstream** (requiere workaround estratégico).
 - Un bump obligatorio (por CVE) requiere cambiar una decisión de `engineering-standards.md`.
 - Más de **3 grupos** de PR no logran CI verde en 24h → se congela el sweep y se escala.

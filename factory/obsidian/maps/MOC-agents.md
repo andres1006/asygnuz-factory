@@ -24,6 +24,7 @@
 - [[factory/agents/profiles/uat|UAT]]
 - [[factory/agents/profiles/devops|DevOps]]
 - [[factory/agents/profiles/security|Security]]
+- [[factory/agents/profiles/dependencies|Dependencies]]
 - [[factory/agents/profiles/orchestrator|Orchestrator]]
 
 ## Prompts
@@ -39,4 +40,5 @@
 - [[factory/agents/prompts/uat|Prompt UAT]]
 - [[factory/agents/prompts/devops|Prompt DevOps]]
 - [[factory/agents/prompts/security|Prompt Security]]
+- [[factory/agents/prompts/dependencies|Prompt Dependencies]]
 - [[factory/agents/prompts/orchestrator|Prompt Orchestrator]]
