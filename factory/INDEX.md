@@ -11,9 +11,45 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - governance/factory-governance.md
 - governance/raci.md
 - governance/quality-gates.md
+- governance/quality-gates.yaml
 
 ## Arquitectura (Factory ↔ Template ↔ Projects)
 - architecture/factory-architecture.md
+
+## Áreas componibles
+- areas/README.md
+- areas/area-schema.md
+- areas/marketing/README.md
+- areas/marketing/area.yaml
+- areas/product/README.md
+- areas/product/area.yaml
+- areas/design/README.md
+- areas/design/area.yaml
+- areas/architecture/README.md
+- areas/architecture/area.yaml
+- areas/data/README.md
+- areas/data/area.yaml
+- areas/development/README.md
+- areas/development/area.yaml
+- areas/qa/README.md
+- areas/qa/area.yaml
+- areas/uat/README.md
+- areas/uat/area.yaml
+- areas/devops/README.md
+- areas/devops/area.yaml
+- areas/security/README.md
+- areas/security/area.yaml
+
+## Agency
+- agency/README.md
+- agency/autonomous-marketing/README.md
+- agency/autonomous-marketing/services.md
+- agency/autonomous-marketing/agents.md
+- agency/autonomous-marketing/approval-policy.md
+- agency/autonomous-marketing/quality-gates.md
+- agency/autonomous-marketing/client-composition-template.yaml
+- agency/autonomous-marketing/openhands.md
+- agency/autonomous-marketing/workflows.md
 
 ## Skills (ecosistema skills.sh)
 - skills/README.md
@@ -45,11 +81,28 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - metrics/scorecard-template.md
 - metrics/quality-metrics.md
 
+## Inteligencia derivada
+- intelligence/README.md
+- intelligence/codegraph/README.md
+- intelligence/codegraph/graph-schema.md
+- intelligence/codegraph/queries.md
+
+## Obsidian (navegación derivada)
+- obsidian/README.md
+- obsidian/maps/MOC-factory.md
+- obsidian/maps/MOC-agents.md
+- obsidian/maps/MOC-quality-gates.md
+- obsidian/maps/MOC-template-evolution.md
+- obsidian/templates/adr-note.md
+- obsidian/templates/gate-note.md
+- obsidian/templates/role-note.md
+
 ## Agentes (perfiles por rol, fuente canónica)
 - agents/README.md
 - agents/gate-role-map.md
 - agents/handoff-flow.md
 - agents/handoff-contracts.md
+- agents/prompts/marketing.md
 - agents/prompts/product.md
 - agents/prompts/design.md
 - agents/prompts/architecture.md
@@ -60,6 +113,7 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - agents/prompts/uat.md
 - agents/prompts/devops.md
 - agents/prompts/security.md
+- agents/profiles/marketing.md
 - agents/profiles/product.md
 - agents/profiles/design.md
 - agents/profiles/architecture.md
@@ -73,6 +127,7 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 
 ## Playbooks por rol
 - playbooks/roles-and-handoffs.md
+- playbooks/marketing-playbook.md
 - playbooks/product-playbook.md
 - playbooks/design-playbook.md
 - playbooks/architecture-playbook.md

@@ -1,0 +1,52 @@
+id: marketing
+name: Marketing
+status: active
+description: Estrategia, posicionamiento, campañas, contenido, performance y reporting.
+roles:
+  - marketing
+gates:
+  - 1
+owns:
+  - docs/marketing/00-marketing-brief.md
+  - content/
+  - campaigns/
+inputs:
+  - docs/intake/
+outputs:
+  - docs/marketing/00-marketing-brief.md
+  - docs/marketing/strategy.md
+  - content/calendar.md
+handoffs:
+  - to: product
+    artifact: docs/marketing/00-marketing-brief.md
+    purpose: Alimentar PRD, ICP, posicionamiento y alcance.
+  - to: design
+    artifact: docs/marketing/00-marketing-brief.md
+    purpose: Guiar tono, jerarquía de mensaje y copy UI.
+  - to: development
+    artifact: docs/marketing/00-marketing-brief.md
+    purpose: Guiar CTAs, microcopy, landing pages y estados UI.
+policies:
+  autonomous:
+    - draft_generation
+    - seo_audit
+    - campaign_planning
+    - analytics_summary
+  human_required:
+    - public_publish
+    - paid_ads_launch
+    - email_blast_send
+    - lead_outreach
+    - sensitive_claims
+metrics:
+  - message_consistency
+  - campaign_velocity
+  - content_throughput
+  - conversion_rate
+references:
+  profiles:
+    - factory/agents/profiles/marketing.md
+  prompts:
+    - factory/agents/prompts/marketing.md
+  playbooks:
+    - factory/playbooks/marketing-playbook.md

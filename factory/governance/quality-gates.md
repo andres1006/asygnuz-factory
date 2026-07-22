@@ -1,7 +1,12 @@
 # Quality Gates
 
+Este documento es la versión normativa legible por humanos. La versión
+estructurada para validaciones automáticas vive en
+`factory/governance/quality-gates.yaml`.
+
 ## Gate 1: Producto
 Criterio:
+- Brief de marketing en `docs/marketing/00-marketing-brief.md` (ICP, posicionamiento, pilares, tono, glosario; supuestos explícitos si aplica)
 - PRD completo
 - RF y RNF con criterios GIVEN/WHEN/THEN
 - KPI de validación semanal definido

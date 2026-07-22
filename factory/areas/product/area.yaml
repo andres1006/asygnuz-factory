@@ -1,0 +1,43 @@
+id: product
+name: Product
+status: active
+description: PRD, RF/RNF, alcance, priorización, KPIs y validación funcional.
+roles:
+  - product
+gates:
+  - 1
+owns:
+  - docs/00-prd.md
+  - docs/01-requisitos-funcionales.md
+  - docs/02-requisitos-no-funcionales.md
+inputs:
+  - docs/intake/
+  - docs/marketing/00-marketing-brief.md
+outputs:
+  - docs/00-prd.md
+  - docs/01-requisitos-funcionales.md
+  - docs/02-requisitos-no-funcionales.md
+handoffs:
+  - to: design
+    artifact: docs/01-requisitos-funcionales.md
+    purpose: Diseñar flujos alineados a requisitos.
+  - to: architecture
+    artifact: docs/00-prd.md
+    purpose: Definir arquitectura y límites.
+policies:
+  autonomous:
+    - requirements_drafting
+    - acceptance_criteria_drafting
+  human_required:
+    - scope_approval
+    - pricing_or_business_commitments
+metrics:
+  - requirement_completeness
+  - validation_kpi_defined
+references:
+  profiles:
+    - factory/agents/profiles/product.md
+  prompts:
+    - factory/agents/prompts/product.md
+  playbooks:
+    - factory/playbooks/product-playbook.md

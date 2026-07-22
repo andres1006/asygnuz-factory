@@ -9,30 +9,46 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 | **Estrategia** | `strategy/` | Norte: visión, modelo incubadora (POC → clientes), objetivos. |
 | **Gobierno** | `governance/` | Reglas de juego: RACI, gates, definición de hecho, modelo operativo. |
 | **Arquitectura del sistema** | `architecture/` | Cómo encajan Factory → Template → Projects. |
+| **Áreas componibles** | `areas/` | Capacidades activables por cliente: marketing, producto, desarrollo, QA, etc. |
+| **Agency** | `agency/` | Paquetes operativos de áreas; incluye agencia autónoma de marketing con OpenHands. |
 | **Estándares** | `standards/` | Políticas técnicas y de calidad que aplican a todos. |
 | **Decisiones** | `decisions/` | ADRs de fábrica (stack, políticas globales, cambios estructurales). |
 | **Operación** | `operations/` | Runbooks, releases, evolución del template. |
 | **Playbooks** | `playbooks/` | Flujo por rol y entregas entre equipos. |
 | **Agentes (IA)** | `agents/` | Perfiles por rol (Markdown); Cursor/Claude/Gemini enlazan aquí sin duplicar política. |
 | **Skills instalados** | `skills/` | Catálogo y mapa al stack ([skills.sh](https://skills.sh/)); artefactos en `.agents/skills/` (ver `../scripts/install-skills.sh`). |
-| **Inteligencia** | `monitoring/` + `metrics/` | Portafolio, estado, KPIs y scorecards. |
+| **Inteligencia operativa** | `monitoring/` + `metrics/` | Portafolio, estado, KPIs y scorecards. |
+| **Inteligencia derivada** | `intelligence/` | Codegraph, reportes y mapas derivados de la fuente canónica. |
+| **Navegación Obsidian** | `obsidian/` | MOCs y templates para explorar la fábrica como vault sin duplicar política. |
 | **Evolución** | `changes/` | Propuestas y trabajo para mejorar el template y la fábrica. |
 
 ## Flujo de lectura recomendado
 1. `strategy/vision.md` y `strategy/incubator-model.md` — propósito y reglas de la POC (Markdown, MCP, aprobaciones, repos).
 2. `architecture/factory-architecture.md` — niveles Factory → Template → Projects (repos separados).
-3. `governance/operating-model.md` + `governance/quality-gates.md` + `governance/factory-governance.md` — cadencia, gates y DoD global.
-4. `standards/engineering-standards.md` y `standards/task-specification.md` — política técnica y formato de tareas (obligatorio el nivel base; **SDD + gentle-ai opcional** si el producto lo adopta).
-5. `agents/README.md`, `agents/handoff-flow.md`, `agents/handoff-contracts.md`, `agents/prompts/*.md` y `agents/profiles/*.md` — contratos, prompts y perfiles por rol.
-6. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad.
-7. `operations/` — semana, releases y evolución del template.
-8. `monitoring/` y `metrics/` — portafolio y medición.
-9. `decisions/` — cuando una decisión afecte a toda la fábrica o al template base (ADRs).
+3. `governance/operating-model.md` + `governance/quality-gates.md` + `governance/quality-gates.yaml` + `governance/factory-governance.md` — cadencia, gates, contrato estructurado y DoD global.
+4. `areas/README.md` y `areas/area-schema.md` — capacidades componibles por cliente/proyecto.
+5. `agency/autonomous-marketing/` — modelo de agencia autónoma con OpenHands, approvals y gates M1–M7.
+6. `standards/engineering-standards.md` y `standards/task-specification.md` — política técnica y formato de tareas (obligatorio el nivel base; **SDD + gentle-ai opcional** si el producto lo adopta).
+7. `agents/README.md`, `agents/handoff-flow.md`, `agents/handoff-contracts.md`, `agents/prompts/*.md` y `agents/profiles/*.md` — contratos, prompts y perfiles por rol.
+8. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad (incl. `playbooks/marketing-playbook.md`).
+9. `operations/` — semana, releases y evolución del template.
+10. `monitoring/` y `metrics/` — portafolio y medición.
+11. `intelligence/codegraph/` y `obsidian/maps/` — reportes derivados y navegación visual.
+12. `decisions/` — cuando una decisión afecte a toda la fábrica o al template base (ADRs).
 
 El listado exhaustivo de archivos está en `INDEX.md`.
 
 ## Regla de oro
 Todo aprendizaje de proyectos se retroalimenta en `template/` vía un change documentado en `changes/`, alineado con estándares y, si aplica, un ADR en `decisions/`.
+
+## Validación local
+
+Ejecutá `./scripts/check-factory-docs.sh` para detectar drift básico entre `INDEX.md`,
+perfiles/prompts/playbooks, gates estructurados, mapas Obsidian, Codegraph y
+archivos locales no versionables.
+
+Ejecutá `./scripts/generate-codegraph-report.sh` para regenerar los reportes
+derivados en `factory/intelligence/codegraph/reports/`.
 
 ## Índice detallado
 Ver `INDEX.md`.

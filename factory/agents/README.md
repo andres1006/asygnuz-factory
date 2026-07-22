@@ -46,6 +46,7 @@ Los agentes no deben bloquear trabajo por “falta de SDD” si el producto no a
 | ID | Perfil | Perfil (contexto) | Prompt (sesión) |
 |----|--------|-------------------|-----------------|
 | `orchestrator` | Orchestrator | [profiles/orchestrator.md](profiles/orchestrator.md) | [prompts/orchestrator.md](prompts/orchestrator.md) |
+| `marketing` | Marketing | [profiles/marketing.md](profiles/marketing.md) | [prompts/marketing.md](prompts/marketing.md) |
 | `product` | Producto | [profiles/product.md](profiles/product.md) | [prompts/product.md](prompts/product.md) |
 | `design` | Diseño | [profiles/design.md](profiles/design.md) | [prompts/design.md](prompts/design.md) |
 | `architecture` | Arquitectura | [profiles/architecture.md](profiles/architecture.md) | [prompts/architecture.md](prompts/architecture.md) |
@@ -56,6 +57,26 @@ Los agentes no deben bloquear trabajo por “falta de SDD” si el producto no a
 | `uat` | UAT | [profiles/uat.md](profiles/uat.md) | [prompts/uat.md](prompts/uat.md) |
 | `devops` | DevOps | [profiles/devops.md](profiles/devops.md) | [prompts/devops.md](prompts/devops.md) |
 | `security` | Security | [profiles/security.md](profiles/security.md) | [prompts/security.md](prompts/security.md) |
+
+## Matriz canónica por rol
+
+Esta tabla conecta el contexto del agente, el prompt ejecutable, el playbook
+operativo y el gate donde participa. Si una ruta cambia, actualizá esta matriz,
+`gate-role-map.md` y `handoff-contracts.md` en el mismo cambio.
+
+| Rol | Gate(s) | Perfil | Prompt | Playbook principal | Salidas principales |
+|-----|---------|--------|--------|--------------------|---------------------|
+| `marketing` | 1, transversal | [profiles/marketing.md](profiles/marketing.md) | [prompts/marketing.md](prompts/marketing.md) | [../playbooks/marketing-playbook.md](../playbooks/marketing-playbook.md) | `docs/marketing/00-marketing-brief.md` |
+| `product` | 1 | [profiles/product.md](profiles/product.md) | [prompts/product.md](prompts/product.md) | [../playbooks/product-playbook.md](../playbooks/product-playbook.md) | `docs/00-prd.md`, `docs/01-requisitos-funcionales.md`, `docs/02-requisitos-no-funcionales.md` |
+| `design` | 2 | [profiles/design.md](profiles/design.md) | [prompts/design.md](prompts/design.md) | [../playbooks/design-playbook.md](../playbooks/design-playbook.md) | `design/user-flows.md`, wireframes/mockups |
+| `architecture` | 3 | [profiles/architecture.md](profiles/architecture.md) | [prompts/architecture.md](prompts/architecture.md) | [../playbooks/architecture-playbook.md](../playbooks/architecture-playbook.md) | `architecture/solution-architecture.md`, ADRs |
+| `db` | 3 | [profiles/db.md](profiles/db.md) | [prompts/db.md](prompts/db.md) | [../playbooks/architecture-playbook.md](../playbooks/architecture-playbook.md) | `db/data-model.md`, `db/migrations/*` |
+| `backend` | 4 | [profiles/backend.md](profiles/backend.md) | [prompts/backend.md](prompts/backend.md) | [../playbooks/backend-playbook.md](../playbooks/backend-playbook.md) | Backend, APIs, integración con DB |
+| `frontend` | 4 | [profiles/frontend.md](profiles/frontend.md) | [prompts/frontend.md](prompts/frontend.md) | [../playbooks/frontend-playbook.md](../playbooks/frontend-playbook.md) | UI implementada, estados, integración |
+| `qa` | 5 | [profiles/qa.md](profiles/qa.md) | [prompts/qa.md](prompts/qa.md) | [../playbooks/qa-playbook.md](../playbooks/qa-playbook.md) | `qa/test-plan.md`, `qa/coverage-report.md` |
+| `uat` | 6 | [profiles/uat.md](profiles/uat.md) | [prompts/uat.md](prompts/uat.md) | [../playbooks/uat-playbook.md](../playbooks/uat-playbook.md) | `uat/uat-checklist.md`, `uat/uat-results-*.md` |
+| `devops` | 7 | [profiles/devops.md](profiles/devops.md) | [prompts/devops.md](prompts/devops.md) | [../playbooks/devops-playbook.md](../playbooks/devops-playbook.md) | `devops/deployment.md`, pipelines |
+| `security` | 7 | [profiles/security.md](profiles/security.md) | [prompts/security.md](prompts/security.md) | [../playbooks/security-playbook.md](../playbooks/security-playbook.md) | `security/security-checklist.md`, `security/security-report.md` |
 
 ## Herramientas (transparente)
 

@@ -1,0 +1,40 @@
+id: architecture
+name: Architecture
+status: active
+description: Arquitectura de solución, ADRs, límites técnicos e integraciones.
+roles:
+  - architecture
+gates:
+  - 3
+owns:
+  - architecture/solution-architecture.md
+  - memory/adrs/
+inputs:
+  - docs/00-prd.md
+  - design/user-flows.md
+outputs:
+  - architecture/solution-architecture.md
+handoffs:
+  - to: data
+    artifact: architecture/solution-architecture.md
+    purpose: Definir entidades, persistencia e integraciones.
+  - to: development
+    artifact: architecture/solution-architecture.md
+    purpose: Guiar módulos, APIs y restricciones.
+policies:
+  autonomous:
+    - architecture_drafting
+    - adr_drafting
+  human_required:
+    - stack_change
+    - irreversible_platform_decision
+metrics:
+  - adr_coverage
+  - architecture_risk_count
+references:
+  profiles:
+    - factory/agents/profiles/architecture.md
+  prompts:
+    - factory/agents/prompts/architecture.md
+  playbooks:
+    - factory/playbooks/architecture-playbook.md

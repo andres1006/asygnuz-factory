@@ -1,0 +1,62 @@
+client: example-client
+mode: autonomous-marketing-agency
+
+active_areas:
+  - marketing
+  - product
+  - design
+  - development
+  - qa
+  - devops
+
+active_services:
+  - strategy
+  - content
+  - seo
+  - email
+  - landing_pages
+  - analytics
+
+channels:
+  linkedin:
+    enabled: true
+    publish_mode: approval_required
+  blog:
+    enabled: true
+    publish_mode: pull_request
+  email:
+    enabled: true
+    publish_mode: approval_required
+  ads:
+    enabled: false
+    publish_mode: approval_required
+
+approval_policy:
+  drafts: autonomous
+  strategy_final: human_required
+  public_content: human_required
+  website_changes: pull_request
+  paid_ads_launch: human_required
+  email_send: human_required
+  lead_outreach: human_required
+  production_deploy: human_required
+
+handoff_policy:
+  require_explicit_artifacts: true
+  allow_missing_optional_areas: true
+
+openhands:
+  allowed:
+    - create_drafts
+    - update_docs
+    - analyze_uploaded_reports
+    - open_pull_requests
+    - generate_weekly_reports
+  blocked_without_approval:
+    - publish_social
+    - send_email_campaign
+    - launch_paid_ads
+    - change_ad_budget
+    - contact_leads
+    - deploy_production
+    - rotate_or_view_secrets

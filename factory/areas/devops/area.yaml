@@ -1,0 +1,37 @@
+id: devops
+name: DevOps
+status: active
+description: CI/CD, ambientes, deploys, configuración operativa y release.
+roles:
+  - devops
+gates:
+  - 7
+owns:
+  - devops/deployment.md
+  - .github/workflows/
+inputs:
+  - uat/uat-results-*.md
+  - security/security-report.md
+outputs:
+  - devops/deployment.md
+handoffs:
+  - to: security
+    artifact: devops/deployment.md
+    purpose: Revisar superficie de deploy y configuración.
+policies:
+  autonomous:
+    - ci_config_drafting
+    - preview_deploy
+  human_required:
+    - production_deploy
+    - secret_rotation
+metrics:
+  - deployment_frequency
+  - change_failure_rate
+references:
+  profiles:
+    - factory/agents/profiles/devops.md
+  prompts:
+    - factory/agents/prompts/devops.md
+  playbooks:
+    - factory/playbooks/devops-playbook.md

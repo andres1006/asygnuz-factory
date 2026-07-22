@@ -5,3 +5,7 @@ projects/*
 
 # Dependencias JS en cualquier ruta del wrapper (p. ej. tooling bajo factory/)
 node_modules/
+
+# Archivos locales de macOS
+.DS_Store
+**/.DS_Store
