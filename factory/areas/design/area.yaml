@@ -1,0 +1,39 @@
+id: design
+name: Design
+status: active
+description: UX/UI, flujos, wireframes, estados y especificación visual.
+roles:
+  - design
+gates:
+  - 2
+owns:
+  - design/user-flows.md
+inputs:
+  - docs/00-prd.md
+  - docs/01-requisitos-funcionales.md
+  - docs/marketing/00-marketing-brief.md
+outputs:
+  - design/user-flows.md
+handoffs:
+  - to: architecture
+    artifact: design/user-flows.md
+    purpose: Informar límites, pantallas, estados y necesidades de datos.
+  - to: development
+    artifact: design/user-flows.md
+    purpose: Implementar UI y estados esperados.
+policies:
+  autonomous:
+    - flow_drafting
+    - wireframe_briefing
+  human_required:
+    - brand_direction_approval
+metrics:
+  - flow_coverage
+  - ux_state_coverage
+references:
+  profiles:
+    - factory/agents/profiles/design.md
+  prompts:
+    - factory/agents/prompts/design.md
+  playbooks:
+    - factory/playbooks/design-playbook.md

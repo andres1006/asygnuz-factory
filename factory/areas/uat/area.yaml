@@ -1,0 +1,34 @@
+id: uat
+name: UAT
+status: active
+description: Validación de negocio, checklist UAT y decisión go/no-go.
+roles:
+  - uat
+gates:
+  - 6
+owns:
+  - uat/uat-checklist.md
+  - uat/uat-results-*.md
+inputs:
+  - qa/coverage-report.md
+outputs:
+  - uat/uat-checklist.md
+  - uat/uat-results-*.md
+handoffs:
+  - to: devops
+    artifact: uat/uat-results-*.md
+    purpose: Autorizar o bloquear release.
+policies:
+  autonomous:
+    - checklist_preparation
+  human_required:
+    - business_go_no_go
+metrics:
+  - uat_pass_rate
+references:
+  profiles:
+    - factory/agents/profiles/uat.md
+  prompts:
+    - factory/agents/prompts/uat.md
+  playbooks:
+    - factory/playbooks/uat-playbook.md

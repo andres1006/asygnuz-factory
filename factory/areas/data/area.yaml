@@ -1,0 +1,38 @@
+id: data
+name: Data
+status: active
+description: Modelo de datos, migraciones, contratos y soporte a analytics.
+roles:
+  - db
+gates:
+  - 3
+owns:
+  - db/data-model.md
+  - db/migrations/
+inputs:
+  - architecture/solution-architecture.md
+  - design/user-flows.md
+outputs:
+  - db/data-model.md
+  - db/migrations/*
+handoffs:
+  - to: development
+    artifact: db/data-model.md
+    purpose: Implementar persistencia y APIs alineadas al modelo.
+policies:
+  autonomous:
+    - model_drafting
+    - migration_drafting
+  human_required:
+    - destructive_migration
+    - production_data_access
+metrics:
+  - migration_safety
+  - data_model_coverage
+references:
+  profiles:
+    - factory/agents/profiles/db.md
+  prompts:
+    - factory/agents/prompts/db.md
+  playbooks:
+    - factory/playbooks/db-playbook.md

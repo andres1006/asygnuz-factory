@@ -1,0 +1,36 @@
+id: qa
+name: QA
+status: active
+description: Plan de pruebas, cobertura, defectos y evidencia de calidad.
+roles:
+  - qa
+gates:
+  - 5
+owns:
+  - qa/test-plan.md
+  - qa/coverage-report.md
+inputs:
+  - tasks/hu/*.md
+outputs:
+  - qa/test-plan.md
+  - qa/coverage-report.md
+handoffs:
+  - to: uat
+    artifact: qa/coverage-report.md
+    purpose: Informar estado de calidad para validación de negocio.
+policies:
+  autonomous:
+    - test_plan_drafting
+    - local_test_execution
+  human_required:
+    - coverage_exception
+metrics:
+  - coverage
+  - escaped_defects
+references:
+  profiles:
+    - factory/agents/profiles/qa.md
+  prompts:
+    - factory/agents/prompts/qa.md
+  playbooks:
+    - factory/playbooks/qa-playbook.md

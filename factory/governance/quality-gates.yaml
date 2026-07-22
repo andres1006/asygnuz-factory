@@ -1,0 +1,113 @@
+version: 1
+source: factory/governance/quality-gates.md
+scope: product-template
+description: >
+  Contrato estructurado de gates. Define archivos mínimos verificables y
+  criterios humanos que completan la revisión. Los scripts pueden consumir
+  required_files y required_globs; los criterios no automatizables quedan en
+  human_checks.
+
+gates:
+  1:
+    name: Producto
+    summary: Brief de marketing, PRD, requisitos funcionales/no funcionales y KPI semanal.
+    roles:
+      - marketing
+      - product
+    required_files:
+      - docs/marketing/00-marketing-brief.md
+      - docs/00-prd.md
+      - docs/01-requisitos-funcionales.md
+      - docs/02-requisitos-no-funcionales.md
+    required_globs: []
+    human_checks:
+      - PRD completo con problema, alcance y supuestos explícitos.
+      - RF y RNF tienen criterios comprobables, preferentemente GIVEN/WHEN/THEN.
+      - KPI de validación semanal definido.
+
+  2:
+    name: Diseño
+    summary: Flujos de usuario trazados a RF y wireframes base.
+    roles:
+      - design
+    required_files:
+      - design/user-flows.md
+    required_globs: []
+    human_checks:
+      - Flujos de usuario mapeados a requisitos funcionales.
+      - Wireframes o referencias visuales disponibles.
+      - Estados de error, vacío y carga considerados cuando apliquen.
+
+  3:
+    name: Arquitectura + DB-first
+    summary: Arquitectura, modelo de datos, migraciones iniciales y ADRs críticos.
+    roles:
+      - architecture
+      - db
+    required_files:
+      - architecture/solution-architecture.md
+      - db/data-model.md
+    required_globs:
+      - db/migrations/*
+    human_checks:
+      - Arquitectura aprobada y alineada a alcance.
+      - Modelo de datos y migraciones iniciales consistentes.
+      - ADRs críticos registrados cuando hay decisiones estructurales.
+
+  4:
+    name: Desarrollo
+    summary: HU implementadas con evidencia en PRs y revisión técnica.
+    roles:
+      - backend
+      - frontend
+    required_files:
+      - tasks/sprint-week-XX.md
+    required_globs:
+      - tasks/hu/*.md
+    human_checks:
+      - HU implementadas con evidencia en PRs.
+      - Convenciones SOLID/Clean Code revisadas.
+      - Trazabilidad RF/HU actualizada.
+
+  5:
+    name: QA
+    summary: Pruebas ejecutadas y cobertura objetivo o excepción aprobada.
+    roles:
+      - qa
+    required_files:
+      - qa/test-plan.md
+      - qa/coverage-report.md
+    required_globs: []
+    human_checks:
+      - Unit, integration y e2e ejecutados según alcance.
+      - Cobertura global >= 90% o excepción explícita aprobada.
+      - Defectos críticos cerrados o con plan acordado.
+
+  6:
+    name: UAT
+    summary: Checklist UAT ejecutado y go/no-go definido.
+    roles:
+      - uat
+    required_files:
+      - uat/uat-checklist.md
+    required_globs:
+      - uat/uat-results-*.md
+    human_checks:
+      - Checklist UAT ejecutado por negocio o representante.
+      - Resultado aprobado o plan de corrección definido.
+
+  7:
+    name: Release
+    summary: Seguridad baseline, deploy controlado y trazabilidad.
+    roles:
+      - devops
+      - security
+    required_files:
+      - security/security-checklist.md
+      - security/security-report.md
+      - traceability/matriz-trazabilidad.md
+    required_globs: []
+    human_checks:
+      - Seguridad baseline aprobada.
+      - Deploy QA y producción controlado.
+      - Matriz de trazabilidad actualizada.

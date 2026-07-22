@@ -1,0 +1,38 @@
+id: security
+name: Security
+status: active
+description: Baseline de seguridad, secretos, riesgos y aprobación de release.
+roles:
+  - security
+gates:
+  - 7
+owns:
+  - security/security-checklist.md
+  - security/security-report.md
+inputs:
+  - architecture/solution-architecture.md
+  - devops/deployment.md
+outputs:
+  - security/security-checklist.md
+  - security/security-report.md
+handoffs:
+  - to: devops
+    artifact: security/security-report.md
+    purpose: Autorizar release o definir bloqueos.
+policies:
+  autonomous:
+    - baseline_review
+    - dependency_audit_summary
+  human_required:
+    - risk_acceptance
+    - production_secret_access
+metrics:
+  - critical_findings
+  - risk_acceptance_count
+references:
+  profiles:
+    - factory/agents/profiles/security.md
+  prompts:
+    - factory/agents/prompts/security.md
+  playbooks:
+    - factory/playbooks/security-playbook.md

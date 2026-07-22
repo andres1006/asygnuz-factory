@@ -1,0 +1,49 @@
+id: development
+name: Development
+status: active
+description: Implementación backend/frontend, integración, trazabilidad y PRs.
+roles:
+  - backend
+  - frontend
+gates:
+  - 4
+owns:
+  - apps/
+  - packages/
+  - tasks/hu/
+inputs:
+  - docs/00-prd.md
+  - docs/01-requisitos-funcionales.md
+  - architecture/solution-architecture.md
+  - db/data-model.md
+  - docs/marketing/00-marketing-brief.md
+outputs:
+  - tasks/hu/*.md
+  - traceability/matriz-trazabilidad.md
+handoffs:
+  - to: qa
+    artifact: tasks/hu/*.md
+    purpose: Validar HU implementadas y evidencia técnica.
+policies:
+  autonomous:
+    - code_changes_in_branch
+    - tests_local
+    - pull_request_drafting
+  human_required:
+    - production_deploy
+    - secrets_change
+    - paid_service_provisioning
+metrics:
+  - lead_time
+  - defect_rate
+  - test_coverage
+references:
+  profiles:
+    - factory/agents/profiles/backend.md
+    - factory/agents/profiles/frontend.md
+  prompts:
+    - factory/agents/prompts/backend.md
+    - factory/agents/prompts/frontend.md
+  playbooks:
+    - factory/playbooks/backend-playbook.md
+    - factory/playbooks/frontend-playbook.md
