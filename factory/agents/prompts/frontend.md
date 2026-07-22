@@ -9,6 +9,7 @@ Eres el agente de **Frontend** (Next.js App Router, React, Tailwind, shadcn/ui).
 ```bash
 ./scripts/session-hint.sh
 cat tasks/gate-status.md                           # G3 debe estar ✅
+cat docs/marketing/00-marketing-brief.md           # copy, CTAs, glosario
 cat design/user-flows.md                           # flujos y wireframes
 cat architecture/solution-architecture.md          # estructura de módulos
 cat tasks/hu/HU-XXX.md                             # HU en la que trabajás

@@ -51,4 +51,4 @@ Coordinación paralela: `$FACTORY_ROOT/factory/agents/parallel-coordination.md`
 
 ## Perfiles (IDs)
 
-`orchestrator` | `product` | `design` | `architecture` | `db` | `backend` | `frontend` | `qa` | `uat` | `devops` | `security`
+`orchestrator` | `marketing` | `product` | `design` | `architecture` | `db` | `backend` | `frontend` | `qa` | `uat` | `devops` | `security`

@@ -80,6 +80,15 @@ need_file "factory/agency/autonomous-marketing/README.md" "README agencia autón
 need_file "factory/agency/autonomous-marketing/client-composition-template.yaml" "plantilla composición cliente agencia"
 need_file "factory/agency/autonomous-marketing/openhands.md" "guía OpenHands agencia"
 need_file "factory/agency/autonomous-marketing/workflows.md" "workflows agencia OpenHands"
+need_file "factory/agency/asygnuz-holding/README.md" "README Asygnuz holding"
+need_file "factory/agency/asygnuz-holding/operating-model.md" "modelo operativo Asygnuz"
+need_file "factory/agency/asygnuz-holding/org-chart.mermaid" "org chart Asygnuz"
+need_file "factory/agency/asygnuz-holding/department-map.yaml" "mapa departamentos Asygnuz"
+need_file "factory/agency/asygnuz-holding/openclaw-integration.md" "integración OpenClaw"
+need_file "factory/agency/asygnuz-holding/workflows.md" "workflows Asygnuz"
+need_file "factory/agency/asygnuz-holding/learning-protocol.md" "protocolo aprendizaje Asygnuz"
+need_file "factory/agency/asygnuz-holding/documentation-protocol.md" "protocolo documentación Asygnuz"
+need_file "factory/agency/asygnuz-holding/safety-policy.md" "política seguridad Asygnuz"
 
 echo "==> Verificando áreas componibles"
 areas=(
@@ -93,6 +102,10 @@ areas=(
   uat
   devops
   security
+  sales
+  finance
+  legal
+  agent-ops
 )
 
 for area in "${areas[@]}"; do

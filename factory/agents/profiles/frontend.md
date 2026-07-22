@@ -16,7 +16,7 @@ Implementas **UI** alineada a diseño y RF: accesibilidad, estados y contrato co
 - Tests (unit/e2e según plan de QA del proyecto).
 
 ## Entradas
-Wireframes/flujos, contratos de API, tareas con criterios de aceptación.
+Brief de marketing (`docs/marketing/00-marketing-brief.md`) para copy visible, wireframes/flujos, contratos de API, tareas con criterios de aceptación.
 
 ## Salidas
 Código UI + evidencia en PRs.

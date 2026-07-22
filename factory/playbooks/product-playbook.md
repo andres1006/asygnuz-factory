@@ -8,6 +8,7 @@ Convertir una idea o necesidad de negocio en especificación ejecutable (PRD + R
 ---
 
 ## Entradas requeridas
+- **Brief de marketing** (`docs/marketing/00-marketing-brief.md`) — alineación de ICP, posicionamiento, tono y glosario
 - Descripción de idea/problema en cualquier formato (tolerar caos: notas, conversación, doc)
 - Contexto: usuario objetivo, dolor que resuelve, restricciones conocidas
 - Objetivo del ciclo semanal

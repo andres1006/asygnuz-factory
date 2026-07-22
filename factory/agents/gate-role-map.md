@@ -4,7 +4,7 @@ Referencia para orquestar agentes y enlazar automatización (CI, scripts). Gates
 
 | Gate | Resumen | Rol(es) | Prompt |
 |------|---------|---------|--------|
-| 1 | Producto | `product` | [prompts/product.md](prompts/product.md) |
+| 1 | Producto (+ dependencia marketing) | `marketing`, `product` | [prompts/marketing.md](prompts/marketing.md), [prompts/product.md](prompts/product.md) |
 | 2 | Diseño | `design` | [prompts/design.md](prompts/design.md) |
 | 3 | Arquitectura + DB | `architecture`, `db` | [prompts/architecture.md](prompts/architecture.md), [prompts/db.md](prompts/db.md) |
 | 4 | Desarrollo | `backend`, `frontend` | [prompts/backend.md](prompts/backend.md), [prompts/frontend.md](prompts/frontend.md) |
@@ -14,6 +14,7 @@ Referencia para orquestar agentes y enlazar automatización (CI, scripts). Gates
 
 ## Transversal
 
+- **Marketing:** no es un gate numerado aparte; alimenta G1 y copy en G2/G4 vía `docs/marketing/00-marketing-brief.md` (verificación en `./scripts/check-gate.sh 1`).
 - Handoffs: [handoff-contracts.md](handoff-contracts.md), [handoff-flow.md](handoff-flow.md)
 - Producto: `tasks/gate-status.md`, `tasks/current-gate.txt`, `CLAUDE.md`
 

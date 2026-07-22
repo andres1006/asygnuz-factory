@@ -1,6 +1,6 @@
 # Inventario
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 20:04:07 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -12,6 +12,14 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/INDEX.md` | markdown |
 | `factory/README.md` | markdown |
 | `factory/agency/README.md` | markdown |
+| `factory/agency/asygnuz-holding/README.md` | markdown |
+| `factory/agency/asygnuz-holding/department-map.yaml` | yaml |
+| `factory/agency/asygnuz-holding/documentation-protocol.md` | markdown |
+| `factory/agency/asygnuz-holding/learning-protocol.md` | markdown |
+| `factory/agency/asygnuz-holding/openclaw-integration.md` | markdown |
+| `factory/agency/asygnuz-holding/operating-model.md` | markdown |
+| `factory/agency/asygnuz-holding/safety-policy.md` | markdown |
+| `factory/agency/asygnuz-holding/workflows.md` | markdown |
 | `factory/agency/autonomous-marketing/README.md` | markdown |
 | `factory/agency/autonomous-marketing/agents.md` | markdown |
 | `factory/agency/autonomous-marketing/approval-policy.md` | markdown |
@@ -54,6 +62,8 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/agents/team-patterns.md` | markdown |
 | `factory/architecture/factory-architecture.md` | markdown |
 | `factory/areas/README.md` | markdown |
+| `factory/areas/agent-ops/README.md` | markdown |
+| `factory/areas/agent-ops/area.yaml` | yaml |
 | `factory/areas/architecture/README.md` | markdown |
 | `factory/areas/architecture/area.yaml` | yaml |
 | `factory/areas/area-schema.md` | markdown |
@@ -65,12 +75,18 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/areas/development/area.yaml` | yaml |
 | `factory/areas/devops/README.md` | markdown |
 | `factory/areas/devops/area.yaml` | yaml |
+| `factory/areas/finance/README.md` | markdown |
+| `factory/areas/finance/area.yaml` | yaml |
+| `factory/areas/legal/README.md` | markdown |
+| `factory/areas/legal/area.yaml` | yaml |
 | `factory/areas/marketing/README.md` | markdown |
 | `factory/areas/marketing/area.yaml` | yaml |
 | `factory/areas/product/README.md` | markdown |
 | `factory/areas/product/area.yaml` | yaml |
 | `factory/areas/qa/README.md` | markdown |
 | `factory/areas/qa/area.yaml` | yaml |
+| `factory/areas/sales/README.md` | markdown |
+| `factory/areas/sales/area.yaml` | yaml |
 | `factory/areas/security/README.md` | markdown |
 | `factory/areas/security/area.yaml` | yaml |
 | `factory/areas/uat/README.md` | markdown |

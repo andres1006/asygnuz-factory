@@ -1,0 +1,70 @@
+graph TD
+    %% Estilos corporativos
+    classDef ceo fill:#1a237e,stroke:#3949ab,stroke-width:2px,color:#fff;
+    classDef cxo fill:#311b92,stroke:#5e35b1,stroke-width:2px,color:#fff;
+    classDef squad fill:#e8eaf6,stroke:#3f51b5,stroke-width:1px,color:#000;
+    classDef human fill:#004d40,stroke:#00897b,stroke-width:2px,color:#fff,shape:hexagon;
+
+    %% Humanos
+    Human{{Andrés Agudelo<br/>(Founder / Chairman)}}:::human
+    
+    %% CEO
+    Jarvis[Jarvis<br/>(Orquestador Principal)]:::ceo
+    Human -->|Estrategia & Aprobación| Jarvis
+    
+    %% Directores (Nivel CXO)
+    subgraph "Nivel Directivo (CXO Bots)"
+        CMO[CMO Bot<br/>(Director Marketing)]:::cxo
+        CTO[CTO Bot<br/>(Director Tecnología)]:::cxo
+        CFO[CFO Bot<br/>(Director Financiero)]:::cxo
+        CLO[CLO Bot<br/>(Director Legal)]:::cxo
+        CHRO[CHRO Bot<br/>(Recursos IA)]:::cxo
+    end
+    
+    Jarvis -->|Delega| CMO
+    Jarvis -->|Delega| CTO
+    Jarvis -->|Delega| CFO
+    Jarvis -->|Delega| CLO
+    Jarvis -->|Delega| CHRO
+
+    %% Squad Marketing
+    subgraph "Squad Marketing (CMO)"
+        M_Strat[Estratega de Funnels]:::squad
+        M_Traf[Trafficker Digital]:::squad
+        M_Copy[Copywriter]:::squad
+        M_SEO[Especialista SEO]:::squad
+        M_Res[Lead Researcher]:::squad
+    end
+    CMO --> M_Strat
+    CMO --> M_Traf
+    CMO --> M_Copy
+    CMO --> M_SEO
+    CMO --> M_Res
+
+    %% Squad Tech
+    subgraph "Squad Ingeniería (CTO)"
+        T_Ego[Ego<br/>Frontend / Fullstack]:::squad
+        T_QA[QA Tester<br/>Pruebas E2E]:::squad
+        T_DevOps[DevOps Engineer<br/>Infra & CI/CD]:::squad
+    end
+    CTO --> T_Ego
+    CTO --> T_QA
+    CTO --> T_DevOps
+
+    %% Squad Finanzas
+    subgraph "Squad Finanzas (CFO)"
+        F_Auditor[Auditor de Comisiones<br/>Analista de Excels]:::squad
+    end
+    CFO --> F_Auditor
+
+    %% Squad Legal
+    subgraph "Squad Legal (CLO)"
+        L_Analyst[Analista de Contratos<br/>Riesgos y Cláusulas]:::squad
+    end
+    CLO --> L_Analyst
+
+    %% Squad HR
+    subgraph "Squad Recursos IA (CHRO)"
+        HR_Eval[Agent Evaluator<br/>Auditor de Prompts]:::squad
+    end
+    CHRO --> HR_Eval

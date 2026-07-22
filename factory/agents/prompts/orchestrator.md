@@ -47,7 +47,7 @@ Si estado = "Pendiente" o "En curso":
 ```
 Consultar factory/agents/team-patterns.md para G[N]:
 
-G1 (product)       → Patrón A, 1 worker
+G1 (marketing → product) → Patrón A, secuencial: si `docs/marketing/00-marketing-brief.md` falta o tiene secciones críticas vacías → worker `marketing` primero; luego worker `product`. Si el brief ya está completo → solo worker `product`
 G2 (design)        → Patrón A, 1 worker
 G3 (arch + db)     → Patrón B, 2 workers en paralelo (worktree)
 G4 (back + front)  → Patrón B, 2 workers en paralelo (worktree), distribuir HUs primero

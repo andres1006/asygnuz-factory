@@ -1,0 +1,90 @@
+version: 1
+name: asygnuz-holding
+description: Department-to-area mapping adapted from the OpenClaw/Jarvis operating structure.
+
+departments:
+  growth:
+    executive: cmo
+    areas:
+      - marketing
+      - sales
+    squads:
+      - funnel-strategy
+      - traffic-acquisition
+      - copywriting
+      - seo
+      - lead-research
+      - sales-ops
+    primary_artifacts:
+      - docs/marketing/00-marketing-brief.md
+      - docs/marketing/strategy.md
+      - campaigns/
+      - content/
+      - sales/
+
+  labs:
+    executive: cto
+    areas:
+      - product
+      - architecture
+      - data
+      - development
+      - dependencies
+      - qa
+      - devops
+      - security
+    squads:
+      - product
+      - frontend
+      - backend
+      - data
+      - qa
+      - platform
+    primary_artifacts:
+      - docs/00-prd.md
+      - architecture/solution-architecture.md
+      - db/data-model.md
+      - apps/
+      - qa/
+      - security/
+
+  finance:
+    executive: cfo
+    areas:
+      - finance
+    squads:
+      - commissions-audit
+      - unit-economics
+      - forecasting
+    primary_artifacts:
+      - finance/revenue-report.md
+      - finance/commission-audit.md
+      - finance/unit-economics.md
+
+  legal:
+    executive: clo
+    areas:
+      - legal
+    squads:
+      - contracts
+      - claims-review
+      - risk
+    primary_artifacts:
+      - legal/contracts/
+      - legal/claims-review.md
+      - legal/risk-register.md
+
+  agent_ops:
+    executive: chro
+    areas:
+      - agent-ops
+    squads:
+      - agent-evaluation
+      - prompt-audit
+      - workflow-maintenance
+      - learning
+    primary_artifacts:
+      - agent-ops/agent-evaluations.md
+      - agent-ops/prompt-audit.md
+      - agent-ops/workflow-registry.md
+      - memory/lessons/

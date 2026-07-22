@@ -26,6 +26,10 @@ artefactos, gates, handoffs, métricas y límites operativos. No reemplaza
 - `uat/` — validación de negocio y go/no-go.
 - `devops/` — entornos, CI/CD, deploys y operación técnica.
 - `security/` — baseline, secretos, threat checks y reporte de seguridad.
+- `sales/` — pipeline comercial, propuestas, outbound y handoff a revenue.
+- `finance/` — revenue, unit economics, forecast y auditoría de comisiones.
+- `legal/` — contratos, claims, privacidad y riesgos.
+- `agent-ops/` — evaluación de agentes, workflows, prompts y aprendizaje.
 
 ## Composición por cliente
 

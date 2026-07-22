@@ -39,6 +39,14 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - areas/devops/area.yaml
 - areas/security/README.md
 - areas/security/area.yaml
+- areas/sales/README.md
+- areas/sales/area.yaml
+- areas/finance/README.md
+- areas/finance/area.yaml
+- areas/legal/README.md
+- areas/legal/area.yaml
+- areas/agent-ops/README.md
+- areas/agent-ops/area.yaml
 
 ## Agency
 - agency/README.md
@@ -50,6 +58,15 @@ Mapa alineado con `README.md` (capas y flujo de lectura). El repositorio **wrapp
 - agency/autonomous-marketing/client-composition-template.yaml
 - agency/autonomous-marketing/openhands.md
 - agency/autonomous-marketing/workflows.md
+- agency/asygnuz-holding/README.md
+- agency/asygnuz-holding/operating-model.md
+- agency/asygnuz-holding/org-chart.mermaid
+- agency/asygnuz-holding/department-map.yaml
+- agency/asygnuz-holding/openclaw-integration.md
+- agency/asygnuz-holding/workflows.md
+- agency/asygnuz-holding/learning-protocol.md
+- agency/asygnuz-holding/documentation-protocol.md
+- agency/asygnuz-holding/safety-policy.md
 
 ## Skills (ecosistema skills.sh)
 - skills/README.md

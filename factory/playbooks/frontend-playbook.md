@@ -8,6 +8,7 @@ Implementar interfaces funcionales, accesibles y performantes alineadas a los fl
 ---
 
 ## Entradas requeridas
+- `docs/marketing/00-marketing-brief.md` (copy y glosario coherentes con UI)
 - Gate 2 ✅ (flujos + wireframes)
 - Gate 3 ✅ (arquitectura — estructura de módulos)
 - Server Actions / Route Handlers disponibles del agente backend

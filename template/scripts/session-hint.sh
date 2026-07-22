@@ -30,7 +30,11 @@ prompt_line() {
 
 echo "Roles y prompts sugeridos (ver factory/agents/gate-role-map.md):"
 case "$GATE" in
-  1) prompt_line "product" "product.md" ;;
+  1)
+    prompt_line "marketing" "marketing.md"
+    prompt_line "product" "product.md"
+    echo "   ℹ️  Gate 1: dependencia marketing → completar docs/marketing/00-marketing-brief.md (o revisarlo) antes de cerrar PRD/RF/RNF."
+    ;;
   2) prompt_line "design" "design.md" ;;
   3)
     prompt_line "architecture" "architecture.md"

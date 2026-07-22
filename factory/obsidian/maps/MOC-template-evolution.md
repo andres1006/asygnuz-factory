@@ -13,6 +13,8 @@
 - Factory define políticas, gates, estándares y agentes.
 - Areas definen capacidades componibles por cliente.
 - Agency empaqueta áreas como servicios operativos.
+- Asygnuz Holding adapta la estructura OpenClaw/Jarvis a departamentos,
+  workflows y políticas versionables.
 - Template instancia estructura, scripts, carpetas y checklists.
 - Projects consumen el template y devuelven aprendizajes vía `factory/changes/`.
 

@@ -6,7 +6,7 @@ Referencia canónica para el Orchestrator. Define cuándo usar cada patrón, cu�
 
 ## Patrón A — Sequential Gate Runner
 
-**Cuándo:** Gates con un solo rol (G1, G2, G5, G6).
+**Cuándo:** Gates con un solo rol secuencial (G1 puede ser `marketing` → `product`; G2, G5, G6 un rol).
 
 ```
 Orchestrator
@@ -19,7 +19,7 @@ Orchestrator
 
 | Gate | Rol único | Auto-avanza sin humano |
 |------|-----------|----------------------|
-| G1 | product | ❌ Siempre requiere aprobación humana |
+| G1 | `marketing` → `product` (secuencial: primero brief, luego PRD/RF/RNF; si el brief ya está completo, solo `product`) | ❌ Siempre requiere aprobación humana |
 | G2 | design | ❌ Siempre requiere aprobación humana |
 | G5 | qa | ⚠️ Solo si cobertura ≥ 90% y 0 defectos Alto/Crítico |
 | G6 | uat | ❌ Siempre requiere aprobación humana |

@@ -10,7 +10,7 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 | **Gobierno** | `governance/` | Reglas de juego: RACI, gates, definición de hecho, modelo operativo. |
 | **Arquitectura del sistema** | `architecture/` | Cómo encajan Factory → Template → Projects. |
 | **Áreas componibles** | `areas/` | Capacidades activables por cliente: marketing, producto, desarrollo, QA, etc. |
-| **Agency** | `agency/` | Paquetes operativos de áreas; incluye agencia autónoma de marketing con OpenHands. |
+| **Agency** | `agency/` | Paquetes operativos de áreas; incluye agencia autónoma de marketing y Asygnuz Holding/OpenClaw. |
 | **Estándares** | `standards/` | Políticas técnicas y de calidad que aplican a todos. |
 | **Decisiones** | `decisions/` | ADRs de fábrica (stack, políticas globales, cambios estructurales). |
 | **Operación** | `operations/` | Runbooks, releases, evolución del template. |
@@ -27,7 +27,7 @@ Este directorio es el **punto único de verdad** para gobierno, conocimiento tra
 2. `architecture/factory-architecture.md` — niveles Factory → Template → Projects (repos separados).
 3. `governance/operating-model.md` + `governance/quality-gates.md` + `governance/quality-gates.yaml` + `governance/factory-governance.md` — cadencia, gates, contrato estructurado y DoD global.
 4. `areas/README.md` y `areas/area-schema.md` — capacidades componibles por cliente/proyecto.
-5. `agency/autonomous-marketing/` — modelo de agencia autónoma con OpenHands, approvals y gates M1–M7.
+5. `agency/autonomous-marketing/` y `agency/asygnuz-holding/` — modelos de agencia/holding con OpenHands, OpenClaw, approvals y workflows.
 6. `standards/engineering-standards.md` y `standards/task-specification.md` — política técnica y formato de tareas (obligatorio el nivel base; **SDD + gentle-ai opcional** si el producto lo adopta).
 7. `agents/README.md`, `agents/handoff-flow.md`, `agents/handoff-contracts.md`, `agents/prompts/*.md` y `agents/profiles/*.md` — contratos, prompts y perfiles por rol.
 8. `playbooks/roles-and-handoffs.md` — handoffs; luego playbooks por rol según necesidad (incl. `playbooks/marketing-playbook.md`).

@@ -10,6 +10,7 @@ Operás con autonomía dentro de los límites definidos abajo; escalar es parte 
 ```bash
 ./scripts/session-hint.sh                        # gate activo + rol sugerido
 cat tasks/gate-status.md                         # estado del pipeline
+cat docs/marketing/00-marketing-brief.md         # dependencia: mensaje, ICP, tono (Gate 1)
 cat docs/intake/00-indice-y-alcance.md           # índice del intake
 cat docs/intake/03-propuesta-valor-y-mvp.md      # propuesta de valor
 cat memory/project-memory.md                     # decisiones y contexto acumulado

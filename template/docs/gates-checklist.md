@@ -3,6 +3,7 @@
 Alineado con **`factory/governance/quality-gates.md`** en el repo de la fábrica (7 gates). Usa esta lista en el repo del producto para revisión humana; el script `./scripts/check-gate.sh` solo valida **presencia mínima de archivos** (ver comentarios en ese script).
 
 ## Gate 1: Producto
+- [ ] Brief de marketing (`docs/marketing/00-marketing-brief.md`) alineado a intake
 - [ ] PRD completo
 - [ ] RF y RNF con criterios GIVEN/WHEN/THEN
 - [ ] KPI de validación semanal definido

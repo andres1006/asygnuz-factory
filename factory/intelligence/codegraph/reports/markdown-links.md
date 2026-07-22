@@ -1,6 +1,6 @@
 # Markdown links
 
-Generado: 2026-07-22 19:16:30 UTC
+Generado: 2026-07-22 20:04:07 UTC
 
 > Reporte derivado. No editar manualmente; regenerar con `./scripts/generate-codegraph-report.sh`.
 
@@ -147,6 +147,9 @@ Generado: 2026-07-22 19:16:30 UTC
 | `factory/obsidian/maps/MOC-factory.md` | `factory/areas/area-schema` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/agency/README` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/agency/autonomous-marketing/README` |
+| `factory/obsidian/maps/MOC-factory.md` | `factory/agency/asygnuz-holding/README` |
+| `factory/obsidian/maps/MOC-factory.md` | `factory/agency/asygnuz-holding/openclaw-integration` |
+| `factory/obsidian/maps/MOC-factory.md` | `factory/agency/asygnuz-holding/org-chart` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/standards/README` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/standards/engineering-standards` |
 | `factory/obsidian/maps/MOC-factory.md` | `factory/standards/task-specification` |

@@ -34,6 +34,7 @@ echo "    (modo: archivos mínimos; ver cabecera de este script para límites)"
 
 case "$GATE" in
   1)
+    need_file "docs/marketing/00-marketing-brief.md" "Brief de marketing"
     need_file "docs/00-prd.md" "PRD"
     need_file "docs/01-requisitos-funcionales.md" "Requisitos funcionales"
     need_file "docs/02-requisitos-no-funcionales.md" "Requisitos no funcionales"

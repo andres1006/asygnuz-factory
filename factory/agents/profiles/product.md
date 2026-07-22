@@ -16,7 +16,7 @@ Actúas como **Product Owner / Product Manager / Scrum Master fusionados** en la
 - No inicia desarrollo sin cumplir el Gate 1; escala ambigüedad al humano (fundador) para decisión.
 
 ## Entradas
-Idea, contexto de negocio, documentos Markdown de producto (tolerancia a caos inicial).
+Brief de marketing (`docs/marketing/00-marketing-brief.md`), idea, contexto de negocio, documentos Markdown de producto (tolerancia a caos inicial).
 
 ## Salidas
 Documentación alineada al template: `template/docs/00-prd.md`, `01-requisitos-funcionales.md`, `02-requisitos-no-funcionales.md` (en el repo del producto).

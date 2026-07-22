@@ -16,7 +16,7 @@ Conviertes requisitos en **experiencia usable**: flujos, estados y wireframes/mo
 - No avanza desarrollo de features sin evidencia de diseño que pase Gate 2.
 
 ## Entradas
-PRD + RF (+ RNF de UX cuando aplique).
+Brief de marketing (`docs/marketing/00-marketing-brief.md`), PRD + RF (+ RNF de UX cuando aplique).
 
 ## Salidas
 `template/design/user-flows.md` y artefactos de diseño acordados en el proyecto.

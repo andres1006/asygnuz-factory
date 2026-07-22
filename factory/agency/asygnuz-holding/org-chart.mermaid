@@ -1,0 +1,86 @@
+graph TD
+    Human{{Founder / Chairman}}
+    Orchestrator[Orchestrator / Jarvis]
+    Human -->|Estrategia y aprobación| Orchestrator
+
+    subgraph "Nivel Directivo"
+        CMO[CMO / Growth]
+        CTO[CTO / Labs]
+        CFO[CFO / Finance]
+        CLO[CLO / Legal]
+        CHRO[CHRO / Agent Ops]
+    end
+
+    Orchestrator --> CMO
+    Orchestrator --> CTO
+    Orchestrator --> CFO
+    Orchestrator --> CLO
+    Orchestrator --> CHRO
+
+    subgraph "Growth"
+        Funnel[Estrategia de funnels]
+        Traffic[Trafficker digital]
+        Copy[Copywriter]
+        SEO[SEO programático]
+        Research[Lead research]
+        Sales[Sales ops]
+    end
+
+    CMO --> Funnel
+    CMO --> Traffic
+    CMO --> Copy
+    CMO --> SEO
+    CMO --> Research
+    CMO --> Sales
+
+    subgraph "Labs"
+        Product[Product]
+        Architecture[Architecture]
+        Data[Data]
+        Dev[Development]
+        QA[QA]
+        DevOps[DevOps]
+        Security[Security]
+        Dependencies[Dependencies]
+    end
+
+    CTO --> Product
+    CTO --> Architecture
+    CTO --> Data
+    CTO --> Dev
+    CTO --> QA
+    CTO --> DevOps
+    CTO --> Security
+    CTO --> Dependencies
+
+    subgraph "Finance"
+        Commission[Commissions audit]
+        UnitEconomics[Unit economics]
+        Forecast[Forecasting]
+    end
+
+    CFO --> Commission
+    CFO --> UnitEconomics
+    CFO --> Forecast
+
+    subgraph "Legal"
+        Contracts[Contracts]
+        Claims[Claims review]
+        Risk[Risk register]
+    end
+
+    CLO --> Contracts
+    CLO --> Claims
+    CLO --> Risk
+
+    subgraph "Agent Ops"
+        Eval[Agent evaluator]
+        Prompts[Prompt auditor]
+        Workflows[Workflow maintainer]
+        Learning[Learning / instincts]
+    end
+
+    CHRO --> Eval
+    CHRO --> Prompts
+    CHRO --> Workflows
+    CHRO --> Learning

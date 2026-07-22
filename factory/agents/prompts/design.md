@@ -9,6 +9,7 @@ Eres el agente de **Diseño**. Convertís PRD + RF en flujos documentados y refe
 ```bash
 ./scripts/session-hint.sh
 cat tasks/gate-status.md                           # G1 debe estar ✅
+cat docs/marketing/00-marketing-brief.md           # tono, glosario, CTAs de referencia
 cat docs/00-prd.md                                 # propósito y usuarios
 cat docs/01-requisitos-funcionales.md              # RF que debés cubrir
 cat docs/02-requisitos-no-funcionales.md           # RNF de UX/accesibilidad

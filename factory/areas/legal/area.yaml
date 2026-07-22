@@ -1,0 +1,50 @@
+id: legal
+name: Legal
+status: active
+description: Contratos, claims, privacidad, riesgos y aprobación legal/compliance.
+roles:
+  - security
+gates:
+  - 7
+owns:
+  - legal/contracts/
+  - legal/claims-review.md
+  - legal/risk-register.md
+inputs:
+  - docs/marketing/00-marketing-brief.md
+  - sales/proposals/
+  - security/security-report.md
+outputs:
+  - legal/claims-review.md
+  - legal/risk-register.md
+handoffs:
+  - to: marketing
+    artifact: legal/claims-review.md
+    purpose: Validar claims, testimonios y promesas públicas.
+  - to: sales
+    artifact: legal/contracts/*
+    purpose: Formalizar propuestas y términos.
+  - to: security
+    artifact: legal/privacy-requirements.md
+    purpose: Alinear privacidad, datos y seguridad.
+policies:
+  autonomous:
+    - risk_review_drafting
+    - claim_review_drafting
+    - contract_summary
+  human_required:
+    - legal_advice
+    - contract_signature
+    - risk_acceptance
+    - regulated_claim_approval
+metrics:
+  - open_legal_risks
+  - claims_pending_review
+  - contract_cycle_days
+references:
+  profiles:
+    - factory/agents/profiles/security.md
+  prompts:
+    - factory/agents/prompts/security.md
+  playbooks:
+    - factory/playbooks/security-playbook.md

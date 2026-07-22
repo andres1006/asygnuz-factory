@@ -8,6 +8,7 @@ Convertir PRD + RF en flujos, estados y referencias de wireframe/mock que permit
 ---
 
 ## Entradas requeridas
+- `docs/marketing/00-marketing-brief.md` (tono, glosario, CTAs de referencia)
 - `docs/00-prd.md` aprobado (Gate 1 ✅)
 - `docs/01-requisitos-funcionales.md` completo
 - `docs/02-requisitos-no-funcionales.md` (especialmente accesibilidad y responsive)

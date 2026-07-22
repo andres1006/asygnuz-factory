@@ -1,6 +1,7 @@
 # Roles and Handoffs
 
 ## Roles
+- Marketing (mensaje, posicionamiento, copy de referencia)
 - Producto
 - Diseño UX/UI
 - Arquitectura
@@ -13,6 +14,6 @@
 - Security
 
 ## Handoffs
-Producto -> Diseño -> Arquitectura/DB -> Dev -> QA -> UAT -> DevOps -> Security -> Release
+Marketing -> Producto -> Diseño -> Arquitectura/DB -> Dev -> QA -> UAT -> DevOps -> Security -> Release
 
 Cada handoff debe incluir evidencia documental en template del proyecto.

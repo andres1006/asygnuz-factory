@@ -16,6 +16,7 @@ Requiere Node.js y `npx`. Genera `.agents/skills/` (Cursor / Antigravity) y enla
 
 | Rol (perfil) | Skills útiles (nombres en skills.sh) |
 |--------------|--------------------------------------|
+| Marketing | `prd`, `enhance-prompt`, `writing-plans` |
 | Producto | `prd`, `writing-plans`, `executing-plans` |
 | Diseño | `frontend-design`, `web-design-guidelines`, `design-md`, `enhance-prompt` |
 | Arquitectura | `api-design-principles`, `vercel-composition-patterns` |

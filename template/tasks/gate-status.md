@@ -4,7 +4,7 @@
 
 | Gate | Nombre | Estado | Fecha | Aprobado por | Notas |
 |------|--------|--------|-------|--------------|-------|
-| G1 | Producto | Pendiente | — | — | PRD + RF + RNF |
+| G1 | Producto | Pendiente | — | — | Brief marketing + PRD + RF + RNF |
 | G2 | Diseño | Pendiente | — | — | Flujos + wireframes |
 | G3 | Arquitectura + DB | Pendiente | — | — | Solución + modelo + migraciones |
 | G4 | Desarrollo | Pendiente | — | — | HU + PRs |

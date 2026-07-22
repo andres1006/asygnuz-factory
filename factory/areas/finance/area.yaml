@@ -1,0 +1,44 @@
+id: finance
+name: Finance
+status: active
+description: Revenue, margen, unit economics, forecast y auditoría financiera.
+roles: []
+gates: []
+owns:
+  - finance/revenue-report.md
+  - finance/commission-audit.md
+  - finance/unit-economics.md
+inputs:
+  - sales/closed-won.md
+  - reports/
+  - campaigns/
+outputs:
+  - finance/revenue-report.md
+  - finance/commission-audit.md
+  - finance/unit-economics.md
+handoffs:
+  - to: marketing
+    artifact: finance/unit-economics.md
+    purpose: Ajustar CAC, ROAS objetivo y presupuesto.
+  - to: sales
+    artifact: finance/pricing-guidance.md
+    purpose: Definir límites de pricing, margen y descuentos.
+policies:
+  autonomous:
+    - report_drafting
+    - commission_reconciliation
+    - unit_economics_analysis
+  human_required:
+    - payment_execution
+    - budget_change
+    - pricing_commitment
+    - financial_forecast_approval
+metrics:
+  - gross_margin
+  - cash_flow
+  - cac_payback
+  - mrr
+references:
+  profiles: []
+  prompts: []
+  playbooks: []

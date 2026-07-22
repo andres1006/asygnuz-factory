@@ -4,6 +4,9 @@ Cada fila es un **contrato**: el rol de la izquierda **produce** (o mantiene) ar
 
 | De → A | Produce (salida) | Lee el siguiente | Formato mínimo |
 |--------|------------------|------------------|----------------|
+| Marketing → Producto | `docs/marketing/00-marketing-brief.md` | Producto | ICP, posicionamiento, pilares de mensaje, tono/voz, glosario; claims marcados si requieren legal. |
+| Marketing → Diseño | (mismo brief) | Diseño | Tono, jerarquía de mensaje, términos prohibidos en UI. |
+| Marketing → Frontend | (mismo brief) | Frontend | CTAs, microcopy alineado a glosario; desvíos solo con acuerdo explícito en PR/ADR. |
 | Producto → Diseño | `docs/00-prd.md`, `docs/01-requisitos-funcionales.md`, `docs/02-requisitos-no-funcionales.md` | Diseño | PRD con problema/alcance; RF/RNF con criterios comprobables (p. ej. GIVEN/WHEN/THEN). |
 | Diseño → Arquitectura | `design/user-flows.md` + referencias a wireframes/mockups | Arquitectura | Flujos enlazados a RF; estados error/vacío. |
 | Diseño → DB | (mismo) + supuestos de datos | DB | Necesidades de entidades reportadas en flujos. |

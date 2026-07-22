@@ -1,0 +1,8 @@
+---
+description: Agente Marketing — brief, posicionamiento, tono y glosario (dependencia Gate 1)
+alwaysApply: false
+---
+
+Actúa según el perfil canónico: `factory/agents/profiles/marketing.md`.
+
+Prioridades: `docs/marketing/00-marketing-brief.md`, alineación con intake, handoffs a Producto/Diseño/Frontend. Ver `factory/agents/prompts/marketing.md` y `factory/agents/handoff-contracts.md`.

@@ -1,0 +1,52 @@
+id: agent-ops
+name: Agent Ops
+status: active
+description: Evaluación de agentes, auditoría de prompts, workflows y aprendizaje continuo.
+roles:
+  - orchestrator
+gates: []
+owns:
+  - agent-ops/agent-evaluations.md
+  - agent-ops/prompt-audit.md
+  - agent-ops/workflow-registry.md
+  - memory/lessons/
+inputs:
+  - factory/agents/
+  - factory/agency/
+  - factory/intelligence/codegraph/reports/
+outputs:
+  - agent-ops/agent-evaluations.md
+  - agent-ops/prompt-audit.md
+  - agent-ops/workflow-registry.md
+  - factory/changes/*
+handoffs:
+  - to: development
+    artifact: agent-ops/workflow-registry.md
+    purpose: Convertir flujos repetibles en scripts o herramientas.
+  - to: security
+    artifact: agent-ops/prompt-audit.md
+    purpose: Revisar riesgos de autonomía, datos y acciones externas.
+  - to: marketing
+    artifact: agent-ops/agent-evaluations.md
+    purpose: Mejorar agentes de contenido, campañas y reporting.
+policies:
+  autonomous:
+    - prompt_review
+    - workflow_documentation
+    - lesson_extraction
+    - codegraph_review
+  human_required:
+    - changing_global_policy
+    - enabling_external_workflow
+    - granting_new_tool_permissions
+metrics:
+  - agent_success_rate
+  - handoff_failure_count
+  - reusable_workflow_count
+references:
+  profiles:
+    - factory/agents/profiles/orchestrator.md
+  prompts:
+    - factory/agents/prompts/orchestrator.md
+  playbooks:
+    - factory/agents/team-patterns.md

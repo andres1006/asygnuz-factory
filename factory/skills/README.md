@@ -39,6 +39,7 @@ npx skills add aj-geddes/claude-code-bmad-skills --skill scrum-master -a cursor 
 
 | Perfil | Skills típicos |
 |--------|----------------|
+| marketing | `prd` (estructura/narrativa), `enhance-prompt` (mensajes y landings), `writing-plans` |
 | product | `prd`, `writing-plans` |
 | design | `frontend-design`, `web-design-guidelines`, `design-md`, `enhance-prompt` |
 | architecture | `api-design-principles`, `vercel-composition-patterns` |

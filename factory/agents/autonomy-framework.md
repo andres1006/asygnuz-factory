@@ -78,7 +78,8 @@ El agente para. Documenta el bloqueo en `tasks/gate-status.md` y en `memory/dail
 
 | Gate | El agente avanza solo cuando | Escala cuando |
 |------|------------------------------|---------------|
-| G1 Producto | Puede inferir del contexto dado | RF se contradicen, alcance cambia, KPI indefinible |
+| G1 Marketing | Puede inferir del intake con supuestos marcados | Claims regulados sin visto bueno humano/legal |
+| G1 Producto | Brief de marketing legible + contexto dado | RF se contradicen, alcance cambia, KPI indefinible, conflicto serio con el brief |
 | G2 Diseño | Herramienta disponible, RF claros | RF no tiene flujo posible, blocker de accesibilidad grave |
 | G3 Arquitectura | Stack de referencia aplica | Cambio de stack, integración nueva, RNF no alcanzable |
 | G3 DB | Entidades claras en RF/flujos | Relación de cardinalidad dudosa, schema cambia contrato de backend |
